@@ -1,6 +1,5 @@
 <h1 align="center">Chase-The-Line project</h1>
 
-
 <div align="center">
 
 [![OS - Linux](https://img.shields.io/badge/OS-Linux-blue?logo=linux&logoColor=white&style=plastic)](https://www.linux.org/ "Go to Linux homepage")
