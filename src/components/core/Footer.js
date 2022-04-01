@@ -1,7 +1,6 @@
 import * as React from "react";
 import BottomNavigation from "@mui/material/BottomNavigation";
-import { Container, List, MenuItem, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Container, List, MenuItem, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
@@ -26,14 +25,14 @@ export default function Footer() {
         right: 0,
       }}
     >
-      <Typography
+      {/* <Typography
         sx={{
           textAlign: "center",
           color: "#fff",
         }}
       >
         LOGO
-      </Typography>
+      </Typography> */}
       <Container>
         <Typography
           sx={{
@@ -52,7 +51,7 @@ export default function Footer() {
           laboris ullamco exercitation cupidatat.
         </Typography>
       </Container>
-      {/* NAvigation */}
+      {/* Navigation */}
       <Box sx={{ display: { xs: "none", md: "block" } }}>
         <List
           sx={{
