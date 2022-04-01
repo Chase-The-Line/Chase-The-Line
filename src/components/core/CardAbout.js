@@ -1,13 +1,12 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 
 export default function About() {
   return (
-    <Card
+    <Box
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -15,22 +14,22 @@ export default function About() {
         padding: "64px 48px",
         position: "absolute",
         width: "1276px",
-        background: "#F3F5F6",
+        // background: "#F3F5F6",
       }}
     >
       <Container
-      // sx={{
-      //   display: "flex",
-      //   width: "542px",
-      //   flexGrow: 1,
-      // }}
+      sx={{
+        display: "flex",
+        width: "542px",
+        flexGrow: 1,
+      }}
       >
         <CardContent>
           <Container
-          // sx={{
-          //   p: 3,
-          //   m: "7px 0px",
-          // }}
+          sx={{
+            p: 3,
+            m: "7px 0px",
+          }}
           >
             <Typography
               sx={{
@@ -77,11 +76,8 @@ export default function About() {
               Mon parcours ...
             </Typography>
           </Container>
-          {/* Avatar */}
-
-         
         </CardContent>
       </Container>
-    </Card>
+    </Box>
   );
 }
