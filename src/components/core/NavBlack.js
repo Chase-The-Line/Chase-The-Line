@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import logo from "assets/images/logo.svg";
 
-export default function Navigation({ children }) {
+export default function NavBlack({ children }) {
   const navigate = useNavigate();
   const [openDrawer, setOpenDrawer] = React.useState(false);
 
@@ -72,7 +72,7 @@ export default function Navigation({ children }) {
                         fontStyle: "normal",
                         fontWeight: 400,
                         fontSize: "14px",
-                        color: "#fff",
+                        color: "#000",
                       }}
                     >
                       {page.titre}
@@ -112,11 +112,13 @@ export default function Navigation({ children }) {
                       onClick={() => navigate({ pathname: `/${page.lien}` })}
                       sx={{
                         justifyContent: "center",
-                        color: "#fff",
+                        color: "#000",
                         background: " #01312B ",
                       }}
                     >
-                      <Typography>{page.titre}</Typography>
+                      <Typography>
+                        {page.titre}
+                      </Typography>
                     </MenuItem>
                   ))}
                 </Box>
