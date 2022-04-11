@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {  BrowserRouter as Router  } from "react-router-dom";
 import App from "./App";
-import reportWebVitals from "tests/reportWebVitals";
-import { theme } from "theme";
-import { ThemeProvider } from "@emotion/react";
+import reportWebVitals from "./tests/reportWebVitals";
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
   <React.StrictMode>
+     <Router>
     <App />
-  </React.StrictMode>
-  </ThemeProvider>,
+    </Router>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 

@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-class Workshop extends Component {
-    render() {
-        return (
-            <div>
-                Atelier
-            </div>
-        );
-    }
+export default function Workshop() {
+  return (
+    <div>Workshop</div>
+  )
 }
-
-export default Workshop;

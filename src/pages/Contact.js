@@ -1,14 +1,7 @@
-import NavBlack from "components/core/NavBlack";
-import React, { Component } from "react";
+import React from 'react'
 
-class Contact extends Component {
-  render() {
-    return (
-      <div>
-        <NavBlack />
-      </div>
-    );
-  }
+export default function Contact() {
+  return (
+    <div>Contact</div>
+  )
 }
-
-export default Contact;
