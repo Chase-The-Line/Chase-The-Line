@@ -12,26 +12,13 @@ const GlobalStyles = createGlobalStyle`
     background-size: cover;
     background-repeat: no-repeat;
     color: hsl(192, 100%, 9%);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 15px;
     margin: 0;
   }
 
-
-  h1 {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-size: 98px;
-    line-height: 140%;
-    letter-spacing: -0.02em;
-    color: #fff;
-  }
-
-  p {
-    opacity: 0.6;
-    line-height: 1.5;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+  p{
+    color: #000;
   }
 
   img {

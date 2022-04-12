@@ -2,6 +2,11 @@
   "name": "chase-the-line",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Attoumani Soukainata",
+    "email": "soukainataa1987@gmail.com",
+    "url": "https://404notfound.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

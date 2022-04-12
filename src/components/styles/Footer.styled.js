@@ -6,6 +6,15 @@ export const StyledFooter = styled.footer`
   padding: 100px 0 60px;
   text-align: center;
 
+  .city-hall {
+    display: flex;
+    position: relative; 
+    width: 603px;
+    height: 521px;
+    left: 0px;
+    top: 0px;
+  }
+
   a {
     margin: 10px;
     padding: 10px;
@@ -32,6 +41,9 @@ export const StyledFooter = styled.footer`
     margin: 0;
     margin-bottom: 30px;
     font-size: 13px;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.5;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {

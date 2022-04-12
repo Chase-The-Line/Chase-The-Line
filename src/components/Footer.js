@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <Container>
-        {/* <img src="./images/mairie.svg" alt="city hall" /> */}
+        {/* <img src="./images/mairie.svg" alt="city hall" className="city-hall" /> */}
         <img src="./images/LogoFooter.svg" alt="logo" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -27,7 +27,6 @@ export default function Footer() {
           Contact
         </NavLink>
         <SocialIcons />
-
         <p>&copy; 2022 Chase The Line. Tous droits réservés</p>
       </Container>
     </StyledFooter>

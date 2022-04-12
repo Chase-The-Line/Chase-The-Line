@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSocialIcons = styled.div`
+export const StyledSocialIconsBlack = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,9 +11,9 @@ export const StyledSocialIcons = styled.div`
   }
 
   a {
-    border: 1px solid #fff;
+    border: 1px solid #b2b2b4;
     border-radius: 50%;
-    color: #fff;
+    color: #b2b2b4;
     display: inline-flex;
     align-items: center;
     justify-content: center;

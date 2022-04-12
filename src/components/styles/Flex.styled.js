@@ -4,11 +4,8 @@ export const Flex = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
-
-  p {
-    color: #fff;
-  }
-
+  flex-direction: row-reverse;
+  
   & > div,
   & > ul {
     flex: 1;

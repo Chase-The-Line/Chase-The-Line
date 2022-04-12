@@ -2,7 +2,24 @@ import styled from "styled-components";
 
 export const StyledHome = styled.header`
   background-color: ${({ theme }) => theme.colors.header};
-  padding: 40px 0;
+  padding: 20px 0;
+
+  h1 {
+    font-family: Libre Baskerville, serif;
+    font-weight: 400;
+    font-size: 98px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+
+  p {
+    opacity: 0.6;
+    line-height: 1.5;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -18,8 +35,8 @@ export const Nav = styled.nav`
     color: #fff;
     text-decoration: none;
     margin-top: 30px;
-    font-family: "Libre Baskerville", serif;
-    font-size: 14px;
+    font-family: Libre Baskerville, serif;
+    font-size: 15px;
   }
 
   .nav-active {
@@ -42,7 +59,6 @@ export const Nav = styled.nav`
     height: 39px;
     left: 74.17px;
     top: 112.04px;
-
     opacity: 0.4;
     transform: rotate(-154.9deg);
   }
@@ -55,7 +71,6 @@ export const Nav = styled.nav`
     height: 26.92px;
     left: 1393.79px;
     top: 231.92px;
-
     opacity: 0.4;
     transform: rotate(-180deg);
   }
@@ -68,7 +83,6 @@ export const Nav = styled.nav`
     height: 26.92px;
     left: 192px;
     top: 825px;
-
     opacity: 0.4;
   }
 

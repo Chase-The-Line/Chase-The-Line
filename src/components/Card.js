@@ -1,16 +1,13 @@
-import { StyledCard } from './styles/Card.styled'
+import { StyledCard } from "./styles/Card.styled";
 
-export default function Card({ item: { id, title, body, image } }) {
+export default function Card({ item: { title, body } }) {
   return (
-    <StyledCard layout={id % 2 === 0 && 'row-reverse'}>
+    <StyledCard layout={"row"}>
       <div>
         <h2>{title}</h2>
+        <img src="./images/divider.svg" alt="divider" className="divider" />
         <p>{body}</p>
       </div>
-
-      <div>
-        {/* <img src={`./images/${image}`} alt='' /> */}
-      </div>
     </StyledCard>
-  )
+  );
 }

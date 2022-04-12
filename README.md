@@ -12,7 +12,7 @@
 ![npm](https://img.shields.io/npm/v/react-router-dom?color=blue&label=react-router-dom&logo=react-router&logoColor=blue&style=plastic)
 ![npm](https://img.shields.io/npm/v/react-router?color=red&label=react-router&logo=react-router&logoColor=red&style=plastic)
 ![npm](https://img.shields.io/npm/v/node?color=green&label=node&logo=node.js&logoColor=node)
-![npm](https://img.shields.io/npm/v/@mui/material?color=blue&label=%40mui%2Fmaterial&logo=mui&logoColor=blue&style=social)
+![npm](https://img.shields.io/npm/v/styled-components?color=pink&label=styled-components&logo=styled-components&style=plastic)
 
 </div>
 
@@ -38,13 +38,19 @@
   yarn add redux
 ```
 
+## Node Version
+
+```
+nvm use 14.18.1
+```
+
 ## Tech Stack
 
-**Client:** React, Redux, Axios, MUI
+**Client:** React, Redux, Axios, Styled-components
 
 ## Infos
 
-> Installer globalement Redux et ses extentions
+> Install Redux in global
 
 ```
 npm i -s react-redux redux redux-thunk redux-devtools-extension
@@ -53,16 +59,16 @@ npm i -s react-redux redux redux-thunk redux-devtools-extension
 
 **Redux**
 
-- *Provider => englobe l'application*
-- Dossier store
-- Dossier reducers
-- Dossier actions
+- *Provider => general application*
+-  store folder
+-  reducers folder
+-  actions folder
 
 **React**
 
-- Dossier components
-- Dossier pages
-
+-  components folder
+-  styles folder
+-  pages folder
 
 
 ## 👤 Authors 
