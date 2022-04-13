@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import Footer from "./components/Footer";
 import GlobalStyles from "./components/styles/Global";
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
@@ -26,7 +25,6 @@ function App() {
           <Route path="/atelier" exact element={<Workshop />} />
           <Route path="/contact" exact element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
       </>
     </ThemeProvider>
   );
