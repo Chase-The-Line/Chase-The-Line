@@ -5,6 +5,8 @@ import { Button } from "../components/styles/Button.styled";
 import WhiteNav from "../components/core/WhiteNav";
 import content from "../content";
 import Card from "../components/Card";
+import { StyledDivCard } from "../components/styles/DivCard.styled";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -23,16 +25,17 @@ export default function Home() {
               enim ad minim veniam, quis nostrud exercitation
             </p>
             <Button>Découvrir</Button>
-            <br />
-            <div>
+            <StyledDivCard>
+              {" "}
               {content.map((item, index) => (
                 <Card key={index} item={item} />
               ))}
-            </div>
+              </StyledDivCard>
           </div>
           <img src="./images/star-3.svg" alt="" className="star-3" />
         </Flex>
       </Container>
+      <Footer />
     </StyledHome>
   );
 }

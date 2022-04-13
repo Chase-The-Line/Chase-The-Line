@@ -9,7 +9,7 @@ export const StyledCard = styled.div`
   margin: 4px;
   padding: 6px;
   border: 1px solid #fff;
-  flex-direction: row;
+  
   margin-top: 10px;
   cursor: pointer;
   opacity: 0.6;

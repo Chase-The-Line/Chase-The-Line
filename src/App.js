@@ -26,7 +26,7 @@ function App() {
           <Route path="/atelier" exact element={<Workshop />} />
           <Route path="/contact" exact element={<Contact />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </ThemeProvider>
   );

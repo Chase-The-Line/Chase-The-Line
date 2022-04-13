@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.colors.footer};
   color: #fff;
-  padding: 100px 0 60px;
+  padding: 10px;
   text-align: center;
+  margin-bottom: -50px;
+  margin-top: 50px;
 
   .city-hall {
     display: flex;
