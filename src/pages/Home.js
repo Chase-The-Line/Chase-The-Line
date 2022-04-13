@@ -1,62 +1,41 @@
-import { Box, Container, Typography } from "@mui/material";
-import Navigation from "components/core/Navigation";
-import React, { Component } from "react";
-import Cards from "components/Cards";
-import Footer from "components/core/Footer";
+import { StyledHome } from "../components/styles/Home.styled";
+import { Container } from "../components/styles/Container.styled";
+import { Flex } from "../components/styles/Flex.styled";
+import { Button } from "../components/styles/Button.styled";
+import WhiteNav from "../components/core/WhiteNav";
+import content from "../content";
+import Card from "../components/Card";
+import { StyledDivCard } from "../components/styles/DivCard.styled";
+import Footer from "../components/Footer";
 
-class Home extends Component {
-  render() {
-    return (
-      <Box
-        sx={{
-          // maxWidth: "200em",
-          // minHeight: "100vh",
-          background:
-            "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://pixabay.com/get/ge6b2ba4a095135ef28bdb74450899274f8a5e4b069137b0338234bdaf491fee95106e4ba61f0ef36173148154c9c48c1df475869f4663db7abcac87c8fe072d9_1920.jpg)",
-        }}
-        alt="forest"
-      >
-        <Navigation />
-        <Typography
-          sx={{
-            fontFamily: "Libre Baskerville",
-            fontStyle: "normal",
-            fontWeight: 400,
-            fontSize: "98px",
-            textAlign: "center",
-            mt: 5,
-            color: "#fff",
-          }}
-        >
-          Conquer the forest
-        </Typography>
-        <Container>
-          <Typography
-            sx={{
-              width: "auto",
-              fontStyle: "normal",
-              fontWeight: 500,
-              fontSize: "16px",
-              lineHeight: "22px",
-              textAlign: "center",
-              letterSpacing: "-0.02em",
-              color: "#FFFFFF",
-            }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-          </Typography>
-        </Container>
-        <Cards />
-        <Footer/>
-      </Box>
-    );
-  }
+export default function Home() {
+  return (
+    <StyledHome>
+      <img src="./images/star-1.svg" alt="" className="star-1" />
+      <Container>
+        <WhiteNav />
+        <hr/>
+        <Flex>
+          <div>
+            <h1>Conquer the forest</h1>
+            <img src="./images/star-2.svg" alt="" className="star-2" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation
+            </p>
+            <Button>Découvrir</Button>
+            <StyledDivCard>
+              {" "}
+              {content.map((item, index) => (
+                <Card key={index} item={item} />
+              ))}
+              </StyledDivCard>
+          </div>
+          <img src="./images/star-3.svg" alt="" className="star-3" />
+        </Flex>
+      </Container>
+      <Footer />
+    </StyledHome>
+  );
 }
-
-export default Home;
