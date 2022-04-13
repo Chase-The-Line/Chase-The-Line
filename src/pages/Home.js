@@ -12,7 +12,7 @@ export default function Home() {
       <img src="./images/star-1.svg" alt="" className="star-1" />
       <Container>
         <WhiteNav />
-        <hr/>
+        <hr />
         <Flex>
           <div>
             <h1>Conquer the forest</h1>
@@ -23,8 +23,8 @@ export default function Home() {
               enim ad minim veniam, quis nostrud exercitation
             </p>
             <Button>Découvrir</Button>
+            <br />
             <div>
-              {" "}
               {content.map((item, index) => (
                 <Card key={index} item={item} />
               ))}
