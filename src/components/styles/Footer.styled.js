@@ -46,6 +46,7 @@ export const StyledFooter = styled.footer`
     color: #fff;
     margin-top: 10px;
     opacity: 0.5;
+    justify-content: center
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {

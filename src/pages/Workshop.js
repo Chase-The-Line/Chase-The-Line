@@ -4,6 +4,7 @@ import { Container } from "../components/styles/Container.styled";
 import { StyledWorkshop } from "../components/styles/Workshop.styled";
 import { Button } from "../components/styles/Button.styled";
 import { Flex } from "../components/styles/Flex.styled";
+import Footer from "../components/Footer";
 
 export default function Workshop() {
   return (
@@ -27,13 +28,14 @@ export default function Workshop() {
             <hr className="solid"></hr>
           </Button>
         </Flex>
+        <Flex>
+          <Button>
+            <span className="title-3">Ma galerie images</span>
+          </Button>
+        </Flex>
       </Container>
-      <Flex>
-        <Button>
-          <span className="title-3">Ma galerie images</span>
-        </Button>
-      </Flex>
       <img src="./images/france.svg" alt="france" />
+      <Footer />
     </StyledWorkshop>
   );
 }

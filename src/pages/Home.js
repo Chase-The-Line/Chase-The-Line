@@ -15,7 +15,7 @@ export default function Home() {
       <img src="./images/star-1.svg" alt="" className="star-1" />
       <Container>
         <WhiteNav />
-        <hr/>
+        <hr />
         <Flex>
           <div>
             <h1>Conquer the forest</h1>

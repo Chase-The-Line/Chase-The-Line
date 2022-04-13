@@ -4,6 +4,7 @@ import { StyledAbout } from "../components/styles/About.styled";
 import { Container } from "../components/styles/Container.styled";
 import { Flex } from "../components/styles/Flex.styled";
 import SocialIconsBlack from "../components/SocialIconsBlack";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -24,7 +25,6 @@ export default function About() {
               lieu de rendez-vous.
             </p>
           </div>
-
           <div className="about">
             <img src="./images/avatar.svg" alt="avatar" className="avatar" />
             <div className="name-infos">
@@ -39,6 +39,8 @@ export default function About() {
         <h2>Mon parcours ...</h2>
         <img src="./images/time.svg" alt="" />
       </Container>
+
+      <Footer />
     </StyledAbout>
   );
 }
