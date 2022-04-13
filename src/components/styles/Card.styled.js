@@ -29,7 +29,6 @@ export const StyledCard = styled.div`
   p {
     margin: 0;
     color: #fff;
-    font-family: Montserrat, sans-serif;
     font-size: 13px;
     line-height: 132%;
     display: flex;
@@ -51,10 +50,6 @@ export const StyledCard = styled.div`
     height: 19px;
     word-wrap: break-word;
     opacity: 0.6;
-  }
-
-  .divider {
-    /* width: 57px; */
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {

@@ -3,6 +3,7 @@ const content = [
     id: 1,
     title: "Qui suis-je ?",
     body: "Je m’appelle Maxime et je me lance dans la création d’un magasin de vélo.",
+    
   },
   {
     id: 2,

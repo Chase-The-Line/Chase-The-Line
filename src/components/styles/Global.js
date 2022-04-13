@@ -8,10 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-image: url('./images/background-home.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: hsl(192, 100%, 9%);
+    background-color: ${({ theme }) => theme.colors.body};
     font-family: Montserrat, sans-serif;
     font-size: 15px;
     margin: 0;

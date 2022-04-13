@@ -9,8 +9,7 @@ import Workshop from "./pages/Workshop";
 
 const theme = {
   colors: {
-    // header: "#000",
-    body: "#fff",
+    body: "#f3f5f6",
     footer: "#003333",
   },
   mobile: "768px",

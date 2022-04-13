@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledAbout = styled.header`
-  background-color: #f3f5f6;
+  background-color: ${({ theme }) => theme.colors.body};
   padding: 20px 0;
 
   .avatar {
@@ -66,7 +66,6 @@ export const StyledAbout = styled.header`
 
   p {
     display: flex;
-    color: #000;
     text-align: justify;
     top: 75px;
     font-size: 15px;

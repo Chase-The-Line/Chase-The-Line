@@ -8,7 +8,7 @@ export const StyledFooter = styled.footer`
 
   .city-hall {
     display: flex;
-    position: relative; 
+    position: relative;
     width: 603px;
     height: 521px;
     left: 0px;
