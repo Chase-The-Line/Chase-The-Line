@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.header`
-  /* background-color: ${({ theme }) => theme.colors.header}; */
   background-image: url("./images/background-home.svg");
   background-size: cover;
   background-repeat: no-repeat;

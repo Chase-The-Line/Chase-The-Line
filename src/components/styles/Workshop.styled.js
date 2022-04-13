@@ -8,27 +8,47 @@ export const StyledWorkshop = styled.header`
   padding: 20px 0;
 
   h1 {
-    width: 275px;
-    height: 67px;
     font-family: Libre Baskerville, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 140%;
-    letter-spacing: -0.02em;
     color: #fff;
   }
 
   p {
-    width: 580px;
-    height: 88px;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
-    letter-spacing: -0.02em;
     color: #fff;
+    line-height: 140%;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    margin-bottom: 200px;
+  }
+
+  .title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .title-2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .solid {
+    border-top: 1px solid #fff;
   }
 `;
 
@@ -61,41 +81,6 @@ export const Nav = styled.nav`
     }
   }
 
-  .star-1 {
-    /* star-1 */
-
-    position: absolute;
-    width: 30px;
-    height: 39px;
-    left: 74.17px;
-    top: 112.04px;
-    opacity: 0.4;
-    transform: rotate(-154.9deg);
-  }
-
-  .star-2 {
-    /* star-2 */
-
-    position: absolute;
-    width: 20.79px;
-    height: 26.92px;
-    left: 1393.79px;
-    top: 231.92px;
-    opacity: 0.4;
-    transform: rotate(-180deg);
-  }
-
-  .star-3 {
-    /* star-3 */
-
-    position: absolute;
-    width: 20.79px;
-    height: 26.92px;
-    left: 192px;
-    top: 825px;
-    opacity: 0.4;
-  }
-
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
   }
@@ -111,6 +96,11 @@ export const Logo = styled.img`
 export const Image = styled.img`
   width: 375px;
   margin-left: 40px;
+  height: 200px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 40px 0 30px;

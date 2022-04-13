@@ -9,9 +9,8 @@ export default function About() {
   return (
     <StyledAbout>
       <Container>
-        <img src="./images/star-black-1.svg" alt="" className="star-black-1" />
         <BlackNav />
-        <img src="./images/divider-black.svg" alt="divider" />
+        <hr />
         <Flex>
           <div>
             <h1>A propos de moi</h1>
@@ -37,7 +36,6 @@ export default function About() {
             </div>
           </div>
         </Flex>
-        <img src="./images/star-black-2.svg" alt="" className="star-black-2" />
         <h2>Mon parcours ...</h2>
         <img src="./images/time.svg" alt="" />
       </Container>

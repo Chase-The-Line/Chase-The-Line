@@ -40,14 +40,13 @@ export const StyledCard = styled.div`
   h2 {
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
     font-size: 14px;
     font-family: Libre Baskerville, serif;
     font-weight: 700;
     line-height: 132%;
     letter-spacing: 2px;
     color: rgba(255, 255, 255, 1);
-    width: 234px;
-    height: 19px;
     word-wrap: break-word;
     opacity: 0.6;
   }

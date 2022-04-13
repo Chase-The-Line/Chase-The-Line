@@ -5,6 +5,7 @@ export const Flex = styled.div`
   align-items: center;
   text-align: center;
   flex-direction: row-reverse;
+  justify-content: center;
   
   & > div,
   & > ul {

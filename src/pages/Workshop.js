@@ -10,11 +10,9 @@ export default function Workshop() {
     <StyledWorkshop>
       <Container>
         <WhiteNav />
-        <img src="./images/divider.svg" alt="divider" />
-
+        <hr />
         <div>
           <h1>Mon atelier</h1>
-          {/* <img src="./images/star-2.svg" alt="" className="star-2" /> */}
           <p>
             Chase The Line c'est un atelier de réparation et entretien cycle et
             suspensions ! Il sera aussi bientôt possible de louer des VTT à
@@ -24,14 +22,18 @@ export default function Workshop() {
         </div>
         <Flex>
           <Button>
-            <span> intéressé(e) ?</span>
-            <br />
-            <span>Voir les tarifs</span>
-            <br />
+            <span className="title"> intéressé(e) ?</span>
+            <span className="title-2">Voir les tarifs</span>
+            <hr className="solid"></hr>
           </Button>
-          {/* <img src="./images/star-3.svg" alt="" className="star-3" /> */}
         </Flex>
       </Container>
+      <Flex>
+        <Button>
+          <span className="title-3">Ma galerie images</span>
+        </Button>
+      </Flex>
+      <img src="./images/france.svg" alt="france" />
     </StyledWorkshop>
   );
 }

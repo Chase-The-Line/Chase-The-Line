@@ -12,7 +12,7 @@ export default function Home() {
       <img src="./images/star-1.svg" alt="" className="star-1" />
       <Container>
         <WhiteNav />
-        <img src="./images/divider.svg" alt="divider" />
+        <hr/>
         <Flex>
           <div>
             <h1>Conquer the forest</h1>

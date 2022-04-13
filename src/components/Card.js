@@ -5,7 +5,7 @@ export default function Card({ item: { title, body } }) {
     <StyledCard layout={"row"}>
       <div>
         <h2>{title}</h2>
-        <img src="./images/divider.svg" alt="divider" className="divider" />
+        <hr />
         <p>{body}</p>
       </div>
     </StyledCard>
