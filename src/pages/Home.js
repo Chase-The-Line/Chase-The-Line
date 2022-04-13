@@ -7,6 +7,7 @@ import content from "../content";
 import Card from "../components/Card";
 import { StyledDivCard } from "../components/styles/DivCard.styled";
 import Footer from "../components/Footer";
+// import { GoogleMap } from "../components/GoogleMap";
 
 export default function Home() {
   return (
@@ -33,7 +34,11 @@ export default function Home() {
               </StyledDivCard>
           </div>
           <img src="./images/star-3.svg" alt="" className="star-3" />
-        </Flex>
+        </Flex> 
+        {/* <StyledDivCard> 
+        <img src="./images/mairie.svg" alt="city hall" className="city-hall" />
+           <GoogleMap />
+           </StyledDivCard>  */}
       </Container>
       <Footer />
     </StyledHome>
