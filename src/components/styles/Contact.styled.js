@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledContact = styled.header`
   background-color: ${({ theme }) => theme.colors.body};
-  padding: 20px 0;
-  
+  padding: 10px 0;
+
   p {
     font-size: 13px;
     font-family: Montserrat, sans-serif;
@@ -23,28 +23,6 @@ export const StyledContact = styled.header`
     letter-spacing: 0.1px;
     color: rgba(1, 49, 43, 1);
     text-align: center;
-  }
-
-  .link {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    height: 30px;
-    width: 30px;
-    text-decoration: none;
-  }
-
-  .email {
-    font-size: 13px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    line-height: 127%;
-    letter-spacing: 0.2px;
-    color: rgba(82, 87, 92, 1);
   }
 
   label {
@@ -80,6 +58,17 @@ export const StyledContact = styled.header`
     line-height: 113%;
     letter-spacing: 0.2px;
     color: rgba(82, 87, 92, 1);
+    text-align: left;
+  }
+
+  .email {
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    line-height: 127%;
+    letter-spacing: 0.2px;
+    color: rgba(82, 87, 92, 1);
+    text-align: left;
   }
 
   .login {
@@ -113,6 +102,7 @@ export const StyledContact = styled.header`
     color: ${({ color }) => color || "#fff"};
     margin-bottom: 10px;
     justify-content: center;
+    text-decoration: none;
 
     &:hover {
       opacity: 0.9;
@@ -132,6 +122,7 @@ export const StyledContact = styled.header`
     color: ${({ color }) => color || "#fff"};
     margin-bottom: 10px;
     justify-content: center;
+    text-decoration: none;
 
     &:hover {
       opacity: 0.9;
@@ -151,6 +142,7 @@ export const StyledContact = styled.header`
     color: ${({ color }) => color || "#fff"};
     margin-bottom: 10px;
     justify-content: center;
+    text-decoration: none;
 
     &:hover {
       opacity: 0.9;
@@ -184,13 +176,21 @@ export const StyledContact = styled.header`
   .group-2 {
     margin-bottom: 20px;
   }
+
+  .image {
+    display: inline;
+    flex: 33.33%;
+    padding: 5px;
+    float: left;
+    /* padding: 20px 0; */
+  }
 `;
 
 export const BlackNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 
   a {
     margin: 10px;
@@ -223,5 +223,14 @@ export const BlackNav = styled.nav`
 export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: relative;
+  }
+`;
+
+export const Image = styled.img`
+  width: 375px;
+  margin-left: 40px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin: 40px 0 30px;
   }
 `;
