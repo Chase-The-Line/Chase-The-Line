@@ -51,7 +51,7 @@ export default function Contact(submit) {
               <FaGoogle /> Google
             </a> */}
             </form>
-              <img src="./images/image.svg" alt="" height="542" className="image" />
+              <img src="./images/image.svg" alt="" height="525" className="image" />
           </StyledDivCard>
         </Flex>
       </Container>

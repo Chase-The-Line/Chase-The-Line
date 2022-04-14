@@ -6,6 +6,8 @@ export const StyledFooter = styled.footer`
   text-align: center;
   margin-bottom: -50px;
   margin-top: 50px;
+  
+  
 
   a {
     justify-content: center;

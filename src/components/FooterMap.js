@@ -35,7 +35,6 @@ export default function Footer() {
         <SocialIcons />
         <p>&copy; 2022 Chase The Line. Tous droits réservés</p>
       </Container>
-      {/* <GoogleMap /> */}
     </StyledFooter>
   );
 }

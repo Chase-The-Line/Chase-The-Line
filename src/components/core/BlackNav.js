@@ -15,8 +15,8 @@ export default function WhiteNav() {
       <NavLink exact="true" to="/atelier" className="nav-active">
         Mon atelier
       </NavLink>
-      <NavLink exact="true" to="/contact" className="nav-active">
-        Contact
+      <NavLink exact="true" to="/images" className="nav-active">
+        Gallerie
       </NavLink>
     </BlackNav>
   );
