@@ -180,7 +180,7 @@ export const StyledContact = styled.header`
   .image {
     display: inline;
     flex: 33.33%;
-    padding: 5px;
+    /* padding: 5px; */
     float: left;
     /* padding: 20px 0; */
   }
@@ -219,6 +219,7 @@ export const BlackNav = styled.nav`
     flex-direction: column;
   }
 `;
+
 
 export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {
