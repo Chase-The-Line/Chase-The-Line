@@ -37,27 +37,18 @@ export default function Contact() {
             </button>
             <p className="forgotPass">mot de passe oubliez ?</p>
             <p className="account">ou utilisez un autre compte</p>
+            <a className="twitter" href="https://twitter.com">
+              <FaTwitter /> Twitter
+            </a>
 
-            <button type="button" className="twitter">
-              <a className="link" href="https://twitter.com/?logout=1649927322712">
-                <FaTwitter />
-              </a>
-              Twitter
-            </button>
-            <button type="button" className="facebook">
-              <a className="link" href="https://www.facebook.com/">
-                <FaFacebook />
-              </a>
-              Facebook
-            </button>
-            
-              <a className="link" href="https://www.google.com/intl/fr/gmail/about/">
-                <FaGoogle />
-                <button type="button" className="google">
-              Google
-            </button>
+            <a className="facebook" href="https://www.facebook.com">
+              <FaFacebook /> Facebook
+            </a>
+            <a className="google" href="https://www.google.com">
+              <FaGoogle /> Google
             </a>
           </form>
+          <img src="./images/image.svg" alt="" height="825" className="image" />
         </Flex>
       </Container>
     </StyledContact>
