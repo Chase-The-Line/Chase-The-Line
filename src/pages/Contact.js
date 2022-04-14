@@ -4,12 +4,8 @@ import BlackNav from "../components/core/BlackNav";
 import { Container } from "../components/styles/Container.styled";
 import { FaTwitter, FaGoogle, FaFacebook } from "react-icons/fa";
 import { Flex } from "../components/styles/Flex.styled";
-// import { useForm } from "react-hook-form";
-
-// import saveData from "../data/data";
 
 export default function Contact() {
-  // const { register } = useForm();
   return (
     <StyledContact>
       <Container>
@@ -35,6 +31,7 @@ export default function Contact() {
             <button type="submit" className="login">
               Login
             </button>
+
             <p className="forgotPass">mot de passe oubliez ?</p>
             <p className="account">ou utilisez un autre compte</p>
             <a className="twitter" href="https://twitter.com">

@@ -68,19 +68,16 @@ export const Nav = styled.nav`
     color: #fff;
     text-decoration: none;
     margin-top: 30px;
-    font-family: Libre Baskerville, serif;
+    font-family: Montserrat, sans-serif;
     font-size: 15px;
-  }
+    cursor: pointer;
 
-  .nav-active {
-    &::after {
-      content: "";
-      width: 85%;
-      height: 5px;
-      position: absolute;
-      bottom: 1px;
-      left: 50%;
-      transform: translateX(-50%);
+    &:hover {
+      opacity: 0.9;
+      transform: scale(0.98);
+      background-color: ${({ bg }) => bg || "#40A339"};
+      color: ${({ color }) => color || "#fff"};
+      border-radius: 50px;
     }
   }
 

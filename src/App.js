@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/Global";
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Gallerie from "./pages/Gallerie";
 import Home from "./pages/Home";
 import Workshop from "./pages/Workshop";
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/a-propos" exact element={<About />} />
           <Route path="/atelier" exact element={<Workshop />} />
-          <Route path="/contact" exact element={<Contact />} />
+          <Route path="/images" exact element={<Gallerie />} />
         </Routes>
       </>
     </ThemeProvider>
