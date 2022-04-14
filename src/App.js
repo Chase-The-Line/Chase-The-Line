@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Gallerie from "./pages/Gallerie";
 import Home from "./pages/Home";
 import Workshop from "./pages/Workshop";
-import Contact from "./pages/Contact";
+import Rent from "./pages/Rent"
 
 const theme = {
   colors: {
@@ -23,9 +23,10 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/a-propos" exact element={<About />} />
+          <Route path="/location" exact element={<Rent />} />
           <Route path="/atelier" exact element={<Workshop />} />
           <Route path="/images" exact element={<Gallerie />} />
-          <Route path="/contact" exact element={<Contact />} />
+          {/* <Route path="/contact" exact element={<Contact />} /> */}
         </Routes>
       </>
     </ThemeProvider>
