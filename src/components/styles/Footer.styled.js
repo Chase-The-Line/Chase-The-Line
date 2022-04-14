@@ -34,7 +34,7 @@ export const StyledFooter = styled.footer`
     text-align: center;
     margin: 0;
     margin-bottom: 30px;
-    font-size: 13px;
+    font-size: 11px;
     color: #fff;
     margin-top: 10px;
     opacity: 0.5;

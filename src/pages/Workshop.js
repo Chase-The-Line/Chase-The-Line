@@ -34,8 +34,8 @@ export default function Workshop() {
           </Button>
         </Flex>
       </Container>
+      <img src="./images/france.svg" alt="france" className="france" />
       <Footer />
-      {/* <img src="./images/france.svg" alt="france" className="france" /> */}
     </StyledWorkshop>
   );
 }
