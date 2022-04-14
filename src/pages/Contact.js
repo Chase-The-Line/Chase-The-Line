@@ -1,8 +1,8 @@
 import React from "react";
-import { StyledContact, ContImg } from "../components/styles/Contact.styled";
-import BlackNav from "../components/core/BlackNav";
+import { StyledContact } from "../components/styles/Contact.styled";
+// import BlackNav from "../components/core/BlackNav";
 import { Container } from "../components/styles/Container.styled";
-import { FaTwitter, FaGoogle, FaFacebook } from "react-icons/fa";
+// import { FaTwitter, FaGoogle, FaFacebook } from "react-icons/fa";
 import { Flex } from "../components/styles/Flex.styled";
 import { StyledDivCard } from "../components/styles/DivCard.styled";
 // import { useForm } from "react-hook-form";
@@ -14,7 +14,20 @@ export default function Contact(submit) {
   return (
     <StyledContact>
       <Container>
-        <BlackNav />
+        <div>
+          <a href="/">
+            {" "}
+            <img
+              src="./images/logo-black.svg"
+              width="150"
+              height="85"
+              alt=""
+              className="logo"
+            />
+          </a>
+        </div>
+
+        {/* <BlackNav /> */}
         <Flex>
           <StyledDivCard>
             <form>
@@ -51,7 +64,12 @@ export default function Contact(submit) {
               <FaGoogle /> Google
             </a> */}
             </form>
-              <img src="./images/image.svg" alt="" height="525" className="image" />
+            <img
+              src="./images/image.svg"
+              alt=""
+              height="525"
+              className="image"
+            />
           </StyledDivCard>
         </Flex>
       </Container>

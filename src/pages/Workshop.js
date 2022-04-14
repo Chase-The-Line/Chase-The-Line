@@ -33,11 +33,9 @@ export default function Workshop() {
             <span className="title-3">Ma galerie images</span>
           </Button>
         </Flex>
-        <img src="./images/france.svg" alt="france" className="france" />
       </Container>
       <img src="./images/france.svg" alt="france" className="france" />
       <Footer />
     </StyledWorkshop>
-   
   );
 }

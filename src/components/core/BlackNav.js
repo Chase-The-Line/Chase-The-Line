@@ -21,6 +21,9 @@ export default function WhiteNav() {
       <NavLink exact="true" to="/images">
         Gallerie
       </NavLink>
+      <NavLink exact="true" to="/contact">
+        Contact
+      </NavLink>
     </BlackNav>
   );
 }

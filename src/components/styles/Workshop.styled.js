@@ -20,11 +20,9 @@ export const StyledWorkshop = styled.header`
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     color: #fff;
     line-height: 140%;
     letter-spacing: -0.02em;
-   
   }
 
   .title {
@@ -59,7 +57,6 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
 
   a {
     margin: 10px;
@@ -71,14 +68,14 @@ export const Nav = styled.nav`
     font-family: Montserrat, sans-serif;
     font-size: 15px;
     cursor: pointer;
-
+    /* 
     &:hover {
       opacity: 0.9;
       transform: scale(0.98);
       background-color: ${({ bg }) => bg || "#40A339"};
       color: ${({ color }) => color || "#fff"};
       border-radius: 50px;
-    }
+    } */
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -96,7 +93,6 @@ export const Logo = styled.img`
 export const Image = styled.img`
   width: 375px;
   margin-left: 40px;
-  
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 40px 0 30px;

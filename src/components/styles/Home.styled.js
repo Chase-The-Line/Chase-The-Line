@@ -17,9 +17,7 @@ export const StyledHome = styled.header`
   }
 
   p {
-    letter-spacing: 1px;
-    font-size: 15px;
-    line-height: 1.5;
+    margin-top: 10px;
     text-align: center;
     font-family: Montserrat, sans-serif;
     color: #fff;
@@ -30,7 +28,6 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
 
   a {
     margin: 10px;
@@ -43,13 +40,13 @@ export const Nav = styled.nav`
     font-size: 15px;
     cursor: pointer;
 
-    &:hover {
+    /* &:hover {
       opacity: 0.9;
       transform: scale(0.98);
       background-color: ${({ bg }) => bg || "#40A339"};
       color: ${({ color }) => color || "#fff"};
       border-radius: 50px;
-    }
+    } */
   }
 
   .star-1 & .star-2 & .star-3 {

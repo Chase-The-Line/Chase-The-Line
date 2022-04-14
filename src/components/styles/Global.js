@@ -14,9 +14,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
-  p{
-    color: #000;
-  }
 
   img {
     max-width: 100%;

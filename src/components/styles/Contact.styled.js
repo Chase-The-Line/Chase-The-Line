@@ -180,8 +180,11 @@ export const StyledContact = styled.header`
   .image {
     display: inline;
     flex: 33.33%;
-    /* padding: 5px; */
     float: left;
+  }
+
+  .logo {
+    align-items: center;
   }
 `;
 
@@ -201,20 +204,19 @@ export const BlackNav = styled.nav`
     font-size: 15px;
     cursor: pointer;
 
-    &:hover {
+    /* &:hover {
       opacity: 0.9;
       transform: scale(0.98);
       background-color: ${({ bg }) => bg || "#40A339"};
       color: ${({ color }) => color || "#fff"};
       border-radius: 50px;
-    }
+    } */
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
   }
 `;
-
 
 export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {

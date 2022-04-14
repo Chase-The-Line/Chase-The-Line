@@ -5,11 +5,12 @@ import About from "./pages/About";
 import Gallerie from "./pages/Gallerie";
 import Home from "./pages/Home";
 import Workshop from "./pages/Workshop";
-import Rent from "./pages/Rent"
+import Rent from "./pages/Rent";
+import Contact from "./pages/Contact";
 
 const theme = {
   colors: {
-    body: "#f3f5f6",
+    body: "#FAF9F7",
     footer: "#003333",
   },
   mobile: "768px",
@@ -26,7 +27,7 @@ function App() {
           <Route path="/location" exact element={<Rent />} />
           <Route path="/atelier" exact element={<Workshop />} />
           <Route path="/images" exact element={<Gallerie />} />
-          {/* <Route path="/contact" exact element={<Contact />} /> */}
+          <Route path="/contact" exact element={<Contact />} />
         </Routes>
       </>
     </ThemeProvider>
