@@ -1,4 +1,4 @@
-import { StyledCard } from "./styles/Card.styled";
+import { StyledCard ,Pcard} from "./styles/Card.styled";
 
 export default function Card({ item: { title, body } }) {
   return (
@@ -6,7 +6,11 @@ export default function Card({ item: { title, body } }) {
       <div>
         <h2>{title}</h2>
         <hr />
-        <p>{body}</p>
+        <Pcard>
+          <p className="p-card">
+            {body}
+          </p>
+        </Pcard>
       </div>
     </StyledCard>
   );

@@ -17,7 +17,8 @@ export const StyledHome = styled.header`
   }
 
   p {
-    opacity: 0.6;
+    letter-spacing: 1px;
+    font-size:15px;
     line-height: 1.5;
     text-align: center;
     font-family: Montserrat, sans-serif;
@@ -38,7 +39,7 @@ export const Nav = styled.nav`
     color: #fff;
     text-decoration: none;
     margin-top: 30px;
-    font-family: Libre Baskerville, serif;
+    font-family: Montserrat, sans-serif;
     font-size: 15px;
   }
 
@@ -63,6 +64,7 @@ export const Nav = styled.nav`
     flex-direction: column;
   }
 `;
+
 
 export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {

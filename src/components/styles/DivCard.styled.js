@@ -6,5 +6,7 @@ export const StyledDivCard = styled.div`
   margin-top: 50px;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
+    display: flex;
+    align-items: center;
   }
 `;
