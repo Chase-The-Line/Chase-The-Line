@@ -2,17 +2,14 @@ import styled from "styled-components";
 
 export const StyledCard = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-arround;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  margin: 4px;
-  padding: 6px;
+  margin: 40px;
   border: 1px solid #fff;
-  
   margin-top: 10px;
   cursor: pointer;
-  opacity: 0.6;
+  
 
   &:hover {
     opacity: 0.8;

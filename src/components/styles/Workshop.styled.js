@@ -23,7 +23,6 @@ export const StyledWorkshop = styled.header`
     font-size: 16px;
     color: #fff;
     line-height: 140%;
-    text-align: justify;
     letter-spacing: -0.02em;
     margin-bottom: 200px;
   }
@@ -45,6 +44,10 @@ export const StyledWorkshop = styled.header`
     font-size: 20px;
     display: flex;
     align-items: center;
+  }
+
+  .france {
+    margin-bottom: -54px;
   }
 
   .solid {
@@ -96,11 +99,6 @@ export const Logo = styled.img`
 export const Image = styled.img`
   width: 375px;
   margin-left: 40px;
-  height: 200px;
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 40px 0 30px;

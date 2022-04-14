@@ -3,21 +3,13 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.colors.footer};
   color: #fff;
-  padding: 10px;
   text-align: center;
   margin-bottom: -50px;
   margin-top: 50px;
 
-  .city-hall {
-    display: flex;
-    position: relative;
-    width: 603px;
-    height: 521px;
-    left: 0px;
-    top: 0px;
-  }
-
   a {
+    justify-content: center;
+    text-align: center;
     margin: 10px;
     padding: 10px;
     position: relative;
@@ -46,11 +38,12 @@ export const StyledFooter = styled.footer`
     color: #fff;
     margin-top: 10px;
     opacity: 0.5;
-    justify-content: center
+    justify-content: center;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     text-align: center;
+
     ul {
       padding: 0;
     }

@@ -54,38 +54,8 @@ export const Nav = styled.nav`
     }
   }
 
-  .star-1 {
-    /* star-1 */
-
-    position: absolute;
+  .star-1 & .star-2 & .star-3 {
     width: 30px;
-    height: 39px;
-    left: 74.17px;
-    top: 112.04px;
-    opacity: 0.4;
-    transform: rotate(-154.9deg);
-  }
-
-  .star-2 {
-    /* star-2 */
-
-    position: absolute;
-    width: 20.79px;
-    height: 26.92px;
-    left: 1393.79px;
-    top: 231.92px;
-    opacity: 0.4;
-    transform: rotate(-180deg);
-  }
-
-  .star-3 {
-    /* star-3 */
-
-    position: absolute;
-    width: 20.79px;
-    height: 26.92px;
-    left: 192px;
-    top: 825px;
     opacity: 0.4;
   }
 

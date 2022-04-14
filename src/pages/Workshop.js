@@ -4,7 +4,7 @@ import { Container } from "../components/styles/Container.styled";
 import { StyledWorkshop } from "../components/styles/Workshop.styled";
 import { Button } from "../components/styles/Button.styled";
 import { Flex } from "../components/styles/Flex.styled";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 export default function Workshop() {
   return (
@@ -34,8 +34,9 @@ export default function Workshop() {
           </Button>
         </Flex>
       </Container>
-      <img src="./images/france.svg" alt="france" />
-      <Footer />
+      <img src="./images/france.svg" alt="france" className="france" />
+      {/* <Footer />  */}
     </StyledWorkshop>
+    
   );
 }

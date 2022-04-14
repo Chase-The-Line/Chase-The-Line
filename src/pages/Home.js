@@ -6,8 +6,7 @@ import WhiteNav from "../components/core/WhiteNav";
 import content from "../content";
 import Card from "../components/Card";
 import { StyledDivCard } from "../components/styles/DivCard.styled";
-import Footer from "../components/Footer";
-// import { GoogleMap } from "../components/GoogleMap";
+import FooterMap from "../components/FooterMap";
 
 export default function Home() {
   return (
@@ -31,16 +30,12 @@ export default function Home() {
               {content.map((item, index) => (
                 <Card key={index} item={item} />
               ))}
-              </StyledDivCard>
+            </StyledDivCard>
           </div>
           <img src="./images/star-3.svg" alt="" className="star-3" />
-        </Flex> 
-        {/* <StyledDivCard> 
-        <img src="./images/mairie.svg" alt="city hall" className="city-hall" />
-           <GoogleMap />
-           </StyledDivCard>  */}
+        </Flex>
       </Container>
-      <Footer />
+      <FooterMap />
     </StyledHome>
   );
 }

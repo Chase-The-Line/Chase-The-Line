@@ -11,6 +11,7 @@ export const Button = styled.button`
   background-color: ${({ bg }) => bg || '#40A339'};
   color: ${({ color }) => color || '#fff'};
   margin-bottom: 30px;
+  justify-content: center;
 
   &:hover {
     opacity: 0.9;

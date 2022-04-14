@@ -39,7 +39,6 @@ export default function About() {
         <h2>Mon parcours ...</h2>
         <img src="./images/time.svg" alt="" />
       </Container>
-
       <Footer />
     </StyledAbout>
   );

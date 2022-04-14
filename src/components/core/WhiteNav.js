@@ -11,7 +11,7 @@ export default function WhiteNav() {
       <NavLink exact="true" to="/a-propos" className="nav-active">
         A propos de moi
       </NavLink>
-      <Logo src="./images/logo.svg" alt="logo" />
+      <Logo src="./images/logo.svg" width="150" height="85" alt="logo" />
       <NavLink exact="true" to="/atelier" className="nav-active">
         Mon atelier
       </NavLink>

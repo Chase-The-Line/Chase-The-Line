@@ -70,6 +70,7 @@ export const StyledAbout = styled.header`
     top: 75px;
     font-size: 15px;
     line-height: 140%;
+    
   }
 `;
 
@@ -102,39 +103,9 @@ export const BlackNav = styled.nav`
     }
   }
 
-  .star-black-1 {
-    /* star-1 */
-
-    position: absolute;
+  .star-black-1 & .star-black-2 & .star-black-3 {
     width: 30px;
-    height: 39px;
-    left: 74.17px;
-    top: 112.04px;
     opacity: 0.4;
-    transform: rotate(-154.9deg);
-  }
-
-  .star-black-2 {
-    /* star-2 */
-
-    position: absolute;
-    width: 20.79px;
-
-    right: 1393.79px;
-    top: 231.92px;
-    opacity: 0.4;
-    transform: rotate(-180deg);
-    color: #000;
-  }
-
-  .star-black-3 {
-    /* star-3 */
-
-    position: absolute;
-    right: 192px;
-    top: 825px;
-    opacity: 0.4;
-    color: #000;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
