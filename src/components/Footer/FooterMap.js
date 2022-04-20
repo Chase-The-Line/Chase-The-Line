@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { GoogleMap } from "./GoogleMap";
-import SocialIcons from "./SocialIcons";
-import { Container } from "./styles/Container.styled";
-import { StyledFooter } from "./styles/Footer.styled";
-import { StyledDivCard } from "./styles/DivCard.styled";
+import SocialIcons from "../SocialIcons/SocialIcons";
+import { Container } from "../styles/Container.styled";
+import { StyledFooter } from "../Footer/Footer.styled";
+import { StyledDivCard } from "../Card/DivCard.styled";
 export default function Footer() {
   return (
     <StyledFooter>

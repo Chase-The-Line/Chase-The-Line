@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledRent } from "./styles/Rent.styled";
+import { StyledRent } from "./Rent.styled";
 
 export default function Prices({
   item: { price, nbrPers, subject, comment, choice },

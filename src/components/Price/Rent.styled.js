@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const StyledRent = styled.header`
-  /* background-color: ${({ theme }) => theme.colors.body}; */
-  padding: 20px 0;
+  background-color: ${({ theme }) => theme.colors.body};
 
   h1 {
     font-family: Montserrat, sans-serif;

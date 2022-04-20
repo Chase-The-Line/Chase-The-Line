@@ -1,7 +1,7 @@
 import React from "react";
-import { StyledTestimonials } from "./styles/Testimonials.styled";
+import { StyledTestimonials } from "./Testimonials.styled";
 import { Container } from "components/styles/Container.styled";
-import { Flex } from "./styles/Flex.styled";
+import { Flex } from "../styles/Flex.styled";
 
 export default function Testimonials() {
   return (

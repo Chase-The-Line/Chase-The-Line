@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.header`
   background-color: ${({ theme }) => theme.colors.body};
-  padding: 20px 0;
 
   .avatar {
     display: flex;
@@ -73,44 +72,9 @@ export const StyledAbout = styled.header`
   }
 `;
 
-export const BlackNav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  a {
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    color: #000;
-    text-decoration: none;
-    margin-top: 30px;
-    font-family: Montserrat, sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-
-    /* &:hover {
-      opacity: 0.9;
-      transform: scale(0.98);
-      background-color: ${({ bg }) => bg || "#40A339"};
-      color: ${({ color }) => color || "#fff"};
-      border-radius: 50px;
-    } */
-  }
-
-  .star-black-1 & .star-black-2 & .star-black-3 {
-    width: 30px;
-    opacity: 0.4;
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-direction: column;
-  }
-`;
-
-export const Logo = styled.img`
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-bottom: 40px;
-    position: relative;
-  }
-`;
+// export const Logo = styled.img`
+//   @media (max-width: ${({ theme }) => theme.mobile}) {
+//     margin-bottom: 40px;
+//     position: relative;
+//   }
+// `;

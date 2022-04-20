@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledContact = styled.header`
   background-color: ${({ theme }) => theme.colors.body};
-  padding: 10px 0;
 
   p {
     font-size: 13px;
@@ -185,50 +184,5 @@ export const StyledContact = styled.header`
 
   .logo {
     align-items: center;
-  }
-`;
-
-export const BlackNav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  a {
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    color: #000;
-    text-decoration: none;
-    margin-top: 30px;
-    font-family: Montserrat, sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-
-    /* &:hover {
-      opacity: 0.9;
-      transform: scale(0.98);
-      background-color: ${({ bg }) => bg || "#40A339"};
-      color: ${({ color }) => color || "#fff"};
-      border-radius: 50px;
-    } */
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-direction: column;
-  }
-`;
-
-export const Logo = styled.img`
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    position: relative;
-  }
-`;
-
-export const Image = styled.img`
-  width: 375px;
-  margin-left: 40px;
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin: 40px 0 30px;
   }
 `;

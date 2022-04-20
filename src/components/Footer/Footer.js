@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import SocialIcons from "./SocialIcons";
-import { Container } from "./styles/Container.styled";
-import { StyledFooter } from "./styles/Footer.styled";
+import SocialIcons from "../SocialIcons/SocialIcons";
+import { Container } from "../styles/Container.styled";
+import { StyledFooter } from "./Footer.styled";
 export default function Footer() {
   return (
     <StyledFooter>

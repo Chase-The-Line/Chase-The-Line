@@ -1,9 +1,9 @@
 import {  FaFacebook, FaGoogle, FaInstagram } from "react-icons/fa";
-import { StyledSocialIconsBlack } from "./styles/SocialIconsBlack.styled";
+import { StyledSocialIcons } from "./SocialIcons.styled";
 
-export default function SocialIconsBlack() {
+export default function SocialIcons() {
   return (
-    <StyledSocialIconsBlack>
+    <StyledSocialIcons>
       <li>
         <a href="https://www.facebook.com/Chase.The.Linemaxdvst/">
           <FaFacebook />
@@ -19,6 +19,6 @@ export default function SocialIconsBlack() {
           <FaInstagram />
         </a>
       </li>
-    </StyledSocialIconsBlack>
+    </StyledSocialIcons>
   );
 }
