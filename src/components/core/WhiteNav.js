@@ -1,27 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Logo, Nav } from "../styles/Home.styled";
+// import Hamburger from "react-hamburgers";
 
-export default function WhiteNav() {
+export default function WhiteNav({ close }) {
   return (
-    <Nav>
-      <NavLink exact="true" to="/">
+    <Nav className="menu">
+      <NavLink onClick={close} exact="true" to="/">
         Home
       </NavLink>
-      <NavLink exact="true" to="/a-propos">
+      <NavLink onClick={close} exact="true" to="/a-propos">
         A propos de moi
       </NavLink>
-      <NavLink exact="true" to="/location">
+      <NavLink onClick={close} exact="true" to="/location">
         Location
       </NavLink>
-      <Logo src="./images/logo.svg" width="150" height="85" alt="logo" className="active" />
-      <NavLink exact="true" to="/atelier">
+      <Logo
+        src="./images/logo.svg"
+        width="150"
+        height="85"
+        alt="logo"
+        className="active"
+      />
+      <NavLink onClick={close} exact="true" to="/atelier">
         Mon atelier
       </NavLink>
-      <NavLink exact="true" to="/images">
+      <NavLink onClick={close} exact="true" to="/images">
         Gallerie
       </NavLink>
-      <NavLink exact="true" to="/contact">
+      <NavLink onClick={close} exact="true" to="/contact">
         Contact
       </NavLink>
     </Nav>
