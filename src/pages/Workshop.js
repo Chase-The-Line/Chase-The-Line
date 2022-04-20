@@ -1,10 +1,10 @@
 import React from "react";
-import WhiteNav from "../components/core/WhiteNav";
-import { Container } from "../components/styles/Container.styled";
-import { StyledWorkshop } from "../components/styles/Workshop.styled";
-import { Button } from "../components/styles/Button.styled";
-import { Flex } from "../components/styles/Flex.styled";
-import Footer from "../components/Footer";
+import WhiteNav from "components/core/WhiteNav";
+import { Container } from "components/styles/Container.styled";
+import { StyledWorkshop } from "components/styles/Workshop.styled";
+import { Button } from "components/styles/Button.styled";
+import { Flex } from "components/styles/Flex.styled";
+import Footer from "components/Footer";
 
 export default function Workshop() {
   return (

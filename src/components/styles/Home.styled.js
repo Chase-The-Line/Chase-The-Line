@@ -47,6 +47,7 @@ export const Nav = styled.nav`
       color: ${({ color }) => color || "#fff"};
       border-radius: 50px;
     } */
+
   }
 
   .star-1 & .star-2 & .star-3 {
@@ -58,6 +59,8 @@ export const Nav = styled.nav`
     flex-direction: column;
   }
 `;
+
+
 
 export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {

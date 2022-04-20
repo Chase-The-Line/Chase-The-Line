@@ -1,13 +1,13 @@
 import React from "react";
-import { StyledContact } from "../components/styles/Contact.styled";
-// import BlackNav from "../components/core/BlackNav";
-import { Container } from "../components/styles/Container.styled";
+import { StyledContact } from "components/styles/Contact.styled";
+// import BlackNav from "components/core/BlackNav";
+import { Container } from "components/styles/Container.styled";
 // import { FaTwitter, FaGoogle, FaFacebook } from "react-icons/fa";
-import { Flex } from "../components/styles/Flex.styled";
-import { StyledDivCard } from "../components/styles/DivCard.styled";
+import { Flex } from "components/styles/Flex.styled";
+import { StyledDivCard } from "components/styles/DivCard.styled";
 // import { useForm } from "react-hook-form";
 
-// import saveData from "../data/data";
+// import saveData from "data/data";
 
 export default function Contact(submit) {
   // const { register } = useForm();
@@ -17,13 +17,7 @@ export default function Contact(submit) {
         <div>
           <a href="/">
             {" "}
-            <img
-              src="./images/logo-black.svg"
-              width="150"
-              height="85"
-              alt=""
-              className="logo"
-            />
+            <img src="./images/logo-black.svg" alt="" className="logo" />
           </a>
         </div>
 

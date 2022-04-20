@@ -1,10 +1,10 @@
 import React from "react";
-import BlackNav from "../components/core/BlackNav";
-import { StyledAbout } from "../components/styles/About.styled";
-import { Container } from "../components/styles/Container.styled";
-import { Flex } from "../components/styles/Flex.styled";
-import SocialIconsBlack from "../components/SocialIconsBlack";
-import Footer from "../components/Footer";
+import BlackNav from "components/core/BlackNav";
+import { StyledAbout } from "components/styles/About.styled";
+import { Container } from "components/styles/Container.styled";
+import { Flex } from "components/styles/Flex.styled";
+import SocialIconsBlack from "components/SocialIconsBlack";
+import Footer from "components/Footer";
 
 export default function About() {
   return (

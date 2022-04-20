@@ -1,12 +1,13 @@
-import { StyledHome } from "../components/styles/Home.styled";
-import { Container } from "../components/styles/Container.styled";
-import { Flex } from "../components/styles/Flex.styled";
-import { Button } from "../components/styles/Button.styled";
-import WhiteNav from "../components/core/WhiteNav";
-import content from "../content";
-import Card from "../components/Card";
-import { StyledDivCard } from "../components/styles/DivCard.styled";
-import FooterMap from "../components/FooterMap";
+import { StyledHome } from "components/styles/Home.styled";
+import { Container } from "components/styles/Container.styled";
+import { Flex } from "components/styles/Flex.styled";
+import { Button } from "components/styles/Button.styled";
+import WhiteNav from "components/core/WhiteNav";
+import content from "content";
+import Card from "components/Card";
+import { StyledDivCard } from "components/styles/DivCard.styled";
+import FooterMap from "components/FooterMap";
+// import Testimonials from "components/Testimonials";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
           <img src="./images/star-3.svg" alt="" className="star-3" />
         </Flex>
       </Container>
+      {/* <Testimonials /> */}
       <FooterMap />
     </StyledHome>
   );
