@@ -39,6 +39,8 @@ export const StyledRent = styled.header`
       border-radius: 40px;
       background: url("./images/leaves.svg"),
         linear-gradient(0deg, rgba(64, 163, 57, 1), rgba(64, 163, 57, 1));
+      background-size: cover;
+      background-repeat: no-repeat;
       box-sizing: border-box;
       box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.3);
       button {
