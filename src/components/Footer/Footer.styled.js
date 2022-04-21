@@ -6,8 +6,6 @@ export const StyledFooter = styled.footer`
   text-align: center;
   margin-bottom: -50px;
   margin-top: 50px;
-  
-  
 
   a {
     justify-content: center;
@@ -53,4 +51,15 @@ export const StyledFooter = styled.footer`
       text-align: center;
     }
   }
+`;
+
+export const FooterCopyRight = styled.p`
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 13px;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.5;
+  justify-content: center;
 `;

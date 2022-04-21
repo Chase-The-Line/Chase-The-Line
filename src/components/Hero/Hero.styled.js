@@ -6,15 +6,6 @@ export const StyledHome = styled.header`
   background-size: cover;
   background-repeat: no-repeat;
 
-  /* h1 {
-    font-family: Libre Baskerville, serif;
-    font-weight: 400;
-    font-size: 98px;
-    line-height: 140%;
-    letter-spacing: -0.02em;
-    color: #fff;
-  } */
-
   p {
     margin-top: 10px;
     text-align: center;
@@ -28,25 +19,15 @@ export const StyledHome = styled.header`
 `;
 
 export const HeroContent = styled.section`
-  /* height: 100%;
-  width: 100%; */
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
-
-  /* @media only screen and (max-width: 375px) {
-    text-align: start;
-    height: 80%;
-  } */
 `;
 
 export const HeroContentText = styled.div`
-  /* width: 50%; */
-  /* padding-top: 5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +55,7 @@ export const HeroSubTitle = styled.h2`
   padding-top: 1rem;
 `;
 
-export const Text = styled.h3`
+export const Text = styled.p`
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 400;
   padding: 2.5rem 2rem;

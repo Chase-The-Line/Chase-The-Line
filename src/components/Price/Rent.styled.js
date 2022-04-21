@@ -13,23 +13,13 @@ export const StyledRent = styled.header`
     margin-bottom: 50px;
   }
 
-  p {
+  .title {
+    color: #848199;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-size: 15px;
     text-align: center;
   }
-
-  .title {
-    color: #848199;
-  }
-
-  /* .back {
-    background: #fff;
-    border-radius: 26px;
-    justify-content: center;
-    display: flex;
-  } */
 
   .group {
     display: flex;

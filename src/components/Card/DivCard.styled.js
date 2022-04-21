@@ -10,3 +10,9 @@ export const StyledDivCard = styled.div`
     align-items: center;
   }
 `;
+
+export const CardContent = styled.div`
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+`;

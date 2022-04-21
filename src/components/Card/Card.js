@@ -1,13 +1,20 @@
-import { StyledCard, Pcard } from "./Card.styled";
+import { Flex } from "components/styles/Flex.styled";
+import { StyledCard, Pcard, CardTitle, ContentIcon } from "./Card.styled";
+import { CardContent } from "./DivCard.styled";
 
-export default function Card({ item: { title, body } }) {
+export default function Card({ item: { title, body, id, icon, link } }) {
   return (
     <StyledCard>
-      <div>
-        <h2>{title}</h2>
-        <hr />
-        <Pcard>{body}</Pcard>
-      </div>
+      <a href={link} className="link">
+        <CardContent>
+          <Flex>
+            <ContentIcon>{icon}</ContentIcon>
+          </Flex>
+          <CardTitle>{title}</CardTitle>
+          <hr className="divider" />
+          <Pcard>{body}</Pcard>
+        </CardContent>
+      </a>
     </StyledCard>
   );
 }

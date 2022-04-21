@@ -56,7 +56,7 @@ export default function WhiteNav() {
             <Menu onClick={handleClick} click={click}>
               <MenuItem>
                 <NavLink onClick={closeMenu} exact="true" to="/">
-                  Home
+                  Acceuil
                 </NavLink>
               </MenuItem>
               <MenuItem>

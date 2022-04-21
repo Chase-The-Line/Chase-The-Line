@@ -25,10 +25,9 @@ export default function Hero() {
   const closeMenu = () => setClick(false);
   return (
     <div>
-      {" "}
-      <img src="./images/star-1.svg" alt="" className="star-1" />
       <Container>
         <Flex>
+          <img src="./images/star-1.svg" alt="" className="star-1" />
           <div>
             <HeroContent>
               <HeroContentText>
@@ -51,7 +50,6 @@ export default function Hero() {
             </Btn>
             {/* Cards */}
             <StyledDivCard>
-              {" "}
               {content.map((item, index) => (
                 <Card key={index} item={item} />
               ))}
