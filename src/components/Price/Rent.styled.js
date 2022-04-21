@@ -35,13 +35,12 @@ export const StyledRent = styled.header`
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.18);
     cursor: pointer;
     &:hover {
-      
-      /* border-radius: 40px; */
+      transform: scale(1.05);
+      border-radius: 40px;
       background: url("./images/leaves.svg"),
         linear-gradient(0deg, rgba(64, 163, 57, 1), rgba(64, 163, 57, 1));
       box-sizing: border-box;
       box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.3);
-      transform: scale(1.05);
       button {
         background: #fff;
         border-radius: 24px;
