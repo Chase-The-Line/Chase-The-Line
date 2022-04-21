@@ -39,12 +39,10 @@ export const HeroContentText = styled.div`
 `;
 
 export const Title = styled.h1`
-  /* font-size: clamp(1rem, 10vw, 5rem); */
   font-weight: 900;
   letter-spacing: 0.5rem;
   line-height: 1.3;
   font-family: Libre Baskerville, serif;
-  /* font-weight: 400; */
   font-size: 70px;
 `;
 
@@ -56,8 +54,7 @@ export const HeroSubTitle = styled.h2`
 `;
 
 export const Text = styled.p`
-  font-size: clamp(2rem, 2.5vw, 3rem);
-  font-weight: 400;
+  font-size: clamp(2rem, 2.5vw, 2rem);
   padding: 2.5rem 2rem;
 
   @media only screen and (max-width: 375px) {

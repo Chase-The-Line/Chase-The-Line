@@ -52,7 +52,7 @@ export const Container = styled.div`
 export const Button = styled.button`
   border-radius: ${({ bigRadius }) => (bigRadius ? "30px" : "20px")};
   background-color: ${({ primary }) => (primary ? "#40A339" : "#000")};
-  color: ${({ primary }) => (primary ? "#000" : "#fff")};
+  color: ${({ primary }) => (primary ? "#fff" : "#000")};
   padding: ${({ big }) => (big ? "18px 30px" : "10px 28px")};
   font-size: ${({ bigFont }) => (bigFont ? "20px" : "18px")};
   outline: none;

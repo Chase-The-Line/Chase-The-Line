@@ -13,7 +13,13 @@ export default function Rent() {
       <BlackNav />
       <Container>
         <h1>Grille tarifaire location</h1>
-        <p className="title">Veuillez choisir le plan qui vous convient</p>
+        <p className="title">
+          Veuillez choisir le plan qui vous convient | Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse{" "}
+        </p>
         <div className="back">
           <div className="">
             <Flex>

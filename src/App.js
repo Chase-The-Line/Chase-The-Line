@@ -10,7 +10,7 @@ import Newsletter from "pages/Newsletter";
 
 const theme = {
   colors: {
-    body: "#FAF9F7",
+    body: "#F9F9F9",
     footer: "#003333",
   },
   mobile: "768px",

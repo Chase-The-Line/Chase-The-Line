@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import { FcAbout } from "react-icons/fc";
-import { FaBicycle } from "react-icons/fa";
-import { BiNews } from "react-icons/bi";
 
 export const StyledCard = styled.div`
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   margin: 40px;
   border: 1px solid #fff;
@@ -63,31 +60,5 @@ export const Pcard = styled.p`
     align-items: center;
     text-align: center;
     letter-spacing: 2px;
-  }
-`;
-
-export const About = styled(FcAbout)`
-  color: #fff;
-  font-size: 5rem;
-`;
-export const Bicycle = styled(FaBicycle)`
-  color: #fff;
-  font-size: 5rem;
-`;
-export const News = styled(BiNews)`
-  color: #fff;
-  font-size: 5rem;
-`;
-
-export const ContentIcon = styled.div`
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  /* transition: all 0.3s ease-out; */
-  margin-top: 2rem;
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-direction: column;
   }
 `;

@@ -50,78 +50,77 @@ export const StyledRent = styled.header`
         color: #fff;
       }
     }
-  }
 
-  .price {
-    font-size: 36px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    /* line-height: 128%; */
-    color: rgba(1, 49, 43, 1);
-  }
+    .price {
+      font-size: 36px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 700;
+      /* line-height: 128%; */
+      color: rgba(1, 49, 43, 1);
+    }
 
-  .txt-2 {
-    font-size: 28px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    color: rgba(1, 49, 43, 1);
-    /* margin-bottom: 13px; */
-    /* padding: 10px; */
-  }
+    .txt-2 {
+      font-size: 28px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      color: rgba(1, 49, 43, 1);
+      /* margin-bottom: 13px; */
+      /* padding: 10px; */
+    }
 
-  .txt-3 {
-    font-size: 15px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    color: rgba(132, 129, 153, 1);
-    width: 300px;
-  }
+    .txt-3 {
+      font-size: 15px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      color: rgba(132, 129, 153, 1);
+      width: 300px;
+    }
 
-  .txt-1 {
-    font-size: 15px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 900;
-    color: rgba(132, 129, 153, 1);
-  }
+    .txt-1 {
+      font-size: 15px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      color: rgba(132, 129, 153, 1);
+    }
 
-  button {
-    border-radius: 50px;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 15px 60px;
-    background-color: ${({ bg }) => bg || "#40A339"};
-    color: #fff;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    justify-content: center;
-    opacity: 0.5;
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-  }
+    button {
+      border-radius: 50px;
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 15px 60px;
+      background-color: ${({ bg }) => bg || "#40A339"};
+      color: #fff;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      justify-content: center;
+      opacity: 0.5;
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      text-align: center;
+    }
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-direction: column;
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      flex-direction: column;
+    }
   }
 `;
 
 export const Users = styled(FaUsers)`
-  color: #CECECE;
+  color: #cecece;
   font-size: 5rem;
-
 `;
 
 export const Users2 = styled(FaUserFriends)`
-  color: #CECECE;
+  color: #cecece;
   font-size: 5rem;
 `;
 
 export const Users3 = styled(FaUserPlus)`
-  color: #CECECE;
+  color: #cecece;
   font-size: 5rem;
 `;
 
@@ -129,13 +128,12 @@ export const IconPrices = styled.div`
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
-  border: 2px solid #40A339;
+  border: 2px solid #40a339;
   transition: all 0.3s ease-out;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   &:hover {
     color: ${({ color }) => color || "#000"};
