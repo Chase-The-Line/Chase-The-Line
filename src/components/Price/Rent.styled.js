@@ -1,3 +1,4 @@
+import { FaUserFriends, FaUserPlus, FaUsers } from "react-icons/fa";
 import styled from "styled-components";
 
 export const StyledRent = styled.header`
@@ -23,16 +24,21 @@ export const StyledRent = styled.header`
 
   .group {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    border-radius: 20px;
-    border: 1px solid #e8e8e8;
+    border-radius: 40px;
+    transition: all 0.4s ease;
+    margin-bottom: 5rem;
     margin: 10px;
-    background: #fff;
+    background-color: #fff;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
     &:hover {
-      border-radius: 26px;
+      transform: scale(1.05);
+      border-radius: 40px;
       background: url("./images/leaves.svg"),
         linear-gradient(0deg, rgba(64, 163, 57, 1), rgba(64, 163, 57, 1));
-      border: 1px solid rgba(151, 151, 151, 1);
       box-sizing: border-box;
       box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.3);
       button {
@@ -138,5 +144,36 @@ export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-bottom: 40px;
     position: relative;
+  }
+`;
+
+export const Users = styled(FaUsers)`
+  color: #CECECE;
+  font-size: 5rem;
+`;
+
+export const Users2 = styled(FaUserFriends)`
+  color: #CECECE;
+  font-size: 5rem;
+`;
+
+export const Users3 = styled(FaUserPlus)`
+  color: #CECECE;
+  font-size: 5rem;
+`;
+
+export const IconPrices = styled.div`
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 2px solid #40a339;
+  transition: all 0.3s ease-out;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: ${({ color }) => color || "#000"};
   }
 `;

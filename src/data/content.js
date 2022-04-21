@@ -1,4 +1,6 @@
-import { About, Bicycle, News } from "components/Card/Card.styled";
+// import { About, Bicycle, News } from "components/Card/Card.styled";
+
+import { Bicycle, News, About } from "components/Card/DivCard.styled";
 
 const content = [
   {

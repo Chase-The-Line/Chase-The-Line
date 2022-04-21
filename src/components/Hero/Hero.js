@@ -31,9 +31,7 @@ export default function Hero() {
           <div>
             <HeroContent>
               <HeroContentText>
-                <Title>
-                  <Title>Conquer the forest</Title>
-                </Title>
+                <Title>Conquer the forest</Title>
                 <HeroSubTitle>Lorem ipsum dolor sit amet</HeroSubTitle>
                 <Text>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -42,13 +40,11 @@ export default function Hero() {
                 </Text>
               </HeroContentText>
             </HeroContent>
-            {/* Boutton */}
             <Btn to="/">
-              <Button primary big bigFont bigRadius>
+              <Button primary big bigRadius>
                 Découvrir
               </Button>
             </Btn>
-            {/* Cards */}
             <StyledDivCard>
               {content.map((item, index) => (
                 <Card key={index} item={item} />

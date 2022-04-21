@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "components/styles/Container.styled";
 import { Flex } from "components/styles/Flex.styled";
 import SocialIconsBlack from "components/SocialIcons/SocialIconsBlack";
-import { AboutContent, AboutImage } from "./About.styled";
+import { AboutContent, AboutImage, AboutTitle } from "./About.styled";
 
 export default function AboutMe() {
   return (
@@ -10,7 +10,7 @@ export default function AboutMe() {
       <Container>
         <Flex>
           <div>
-            <h1>A propos de moi</h1>
+            <AboutTitle>A propos de moi</AboutTitle>
             <AboutContent>
               Bonjour à tous, je m’appelle Maxime et je me lance dans la
               création d’un magasin de vélo. Celui-ci comprendrait : vente,
@@ -34,7 +34,7 @@ export default function AboutMe() {
             </div>
           </div>
         </Flex>
-        <h2>Mon parcours ...</h2>
+        <AboutTitle>Mon parcours ...</AboutTitle>
         <AboutImage>
           {" "}
           <img src="./images/time.svg" alt="" />

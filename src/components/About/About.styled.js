@@ -45,31 +45,6 @@ export const StyledAbout = styled.header`
     line-height: 120%;
     color: #01312b;
   }
-
-  h1 {
-    font-family: Libre Baskerville, serif;
-    font-size: 32px;
-    line-height: 120%;
-    color: #01312b;
-  }
-
-  h2 {
-    display: flex;
-    left: 305px;
-    top: 518px;
-    font-family: Libre Baskerville, serif;
-    font-size: 20px;
-    line-height: 120%;
-    flex-direction: row;
-  }
-
-  /* p {
-    display: flex;
-    text-align: justify;
-    top: 75px;
-    font-size: 15px;
-    line-height: 140%;
-  } */
 `;
 
 // export const Logo = styled.img`
@@ -89,4 +64,11 @@ export const AboutContent = styled.div`
 export const AboutImage = styled.div`
   width: 100%;
   height: 100%;
+`;
+
+export const AboutTitle = styled.h1`
+  font-family: Libre Baskerville, serif;
+  font-size: 32px;
+  line-height: 120%;
+  color: #01312b;
 `;
