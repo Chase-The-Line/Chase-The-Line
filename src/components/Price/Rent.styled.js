@@ -30,7 +30,7 @@ export const StyledRent = styled.header`
     border-radius: 40px;
     transition: all 0.4s ease;
     margin-bottom: 5rem;
-    margin: 10px;
+    margin: 20px;
     background-color: #fff;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.18);
     cursor: pointer;
@@ -56,7 +56,7 @@ export const StyledRent = styled.header`
     font-size: 36px;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
-    line-height: 128%;
+    /* line-height: 128%; */
     color: rgba(1, 49, 43, 1);
   }
 
@@ -65,8 +65,8 @@ export const StyledRent = styled.header`
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: rgba(1, 49, 43, 1);
-    margin-bottom: 13px;
-    padding: 10px;
+    /* margin-bottom: 13px; */
+    /* padding: 10px; */
   }
 
   .txt-3 {
@@ -80,9 +80,10 @@ export const StyledRent = styled.header`
   .txt-1 {
     font-size: 15px;
     font-family: Montserrat, sans-serif;
-    font-weight: 500;
+    font-weight: 900;
     color: rgba(132, 129, 153, 1);
   }
+
 
   button {
     border-radius: 50px;
@@ -93,7 +94,7 @@ export const StyledRent = styled.header`
     font-weight: 700;
     padding: 15px 60px;
     background-color: ${({ bg }) => bg || "#40A339"};
-    color: bisque;
+    color: #fff;
     margin-bottom: 30px;
     margin-top: 30px;
     justify-content: center;
@@ -106,44 +107,6 @@ export const StyledRent = styled.header`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
-  }
-`;
-
-export const BlackNav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-
-  a {
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    color: #000;
-    text-decoration: none;
-    margin-top: 30px;
-    font-family: Montserrat, sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.9;
-      transform: scale(0.98);
-      background-color: ${({ bg }) => bg || "#40A339"};
-      color: ${({ color }) => color || "#fff"};
-      border-radius: 50px;
-    }
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-direction: column;
-  }
-`;
-
-export const Logo = styled.img`
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-bottom: 40px;
-    position: relative;
   }
 `;
 
@@ -166,12 +129,13 @@ export const IconPrices = styled.div`
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
-  border: 2px solid #40a339;
+  border: 2px solid #40A339;
   transition: all 0.3s ease-out;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
 
   &:hover {
     color: ${({ color }) => color || "#000"};

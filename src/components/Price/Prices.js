@@ -12,9 +12,7 @@ export default function Prices({
         <p className="txt-1">{nbrPers}</p>
         <p className="txt-2">{subject}</p>
         <p className="txt-3">{comment}</p>
-        <div>
-          <button>{choice}</button>
-        </div>
+        <button>{choice}</button>
       </div>
     </StyledRent>
   );
