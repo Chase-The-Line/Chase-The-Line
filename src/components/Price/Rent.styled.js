@@ -1,3 +1,4 @@
+import { FaUserFriends, FaUserPlus, FaUsers } from "react-icons/fa";
 import styled from "styled-components";
 
 export const StyledRent = styled.header`
@@ -23,16 +24,21 @@ export const StyledRent = styled.header`
 
   .group {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    border-radius: 20px;
-    border: 1px solid #e8e8e8;
-    margin: 10px;
-    background: #fff;
+    border-radius: 40px;
+    transition: all 0.4s ease;
+    margin-bottom: 5rem;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
     &:hover {
-      border-radius: 26px;
+      transform: scale(1.05);
+      border-radius: 40px;
       background: url("./images/leaves.svg"),
         linear-gradient(0deg, rgba(64, 163, 57, 1), rgba(64, 163, 57, 1));
-      border: 1px solid rgba(151, 151, 151, 1);
       box-sizing: border-box;
       box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.3);
       button {
@@ -50,7 +56,7 @@ export const StyledRent = styled.header`
     font-size: 36px;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
-    line-height: 128%;
+    /* line-height: 128%; */
     color: rgba(1, 49, 43, 1);
   }
 
@@ -59,8 +65,8 @@ export const StyledRent = styled.header`
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: rgba(1, 49, 43, 1);
-    margin-bottom: 13px;
-    padding: 10px;
+    /* margin-bottom: 13px; */
+    /* padding: 10px; */
   }
 
   .txt-3 {
@@ -74,7 +80,7 @@ export const StyledRent = styled.header`
   .txt-1 {
     font-size: 15px;
     font-family: Montserrat, sans-serif;
-    font-weight: 500;
+    font-weight: 900;
     color: rgba(132, 129, 153, 1);
   }
 
@@ -87,7 +93,7 @@ export const StyledRent = styled.header`
     font-weight: 700;
     padding: 15px 60px;
     background-color: ${({ bg }) => bg || "#40A339"};
-    color: bisque;
+    color: #fff;
     margin-bottom: 30px;
     margin-top: 30px;
     justify-content: center;
@@ -103,40 +109,35 @@ export const StyledRent = styled.header`
   }
 `;
 
-export const BlackNav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
+export const Users = styled(FaUsers)`
+  color: #CECECE;
+  font-size: 5rem;
 
-  a {
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    color: #000;
-    text-decoration: none;
-    margin-top: 30px;
-    font-family: Montserrat, sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.9;
-      transform: scale(0.98);
-      background-color: ${({ bg }) => bg || "#40A339"};
-      color: ${({ color }) => color || "#fff"};
-      border-radius: 50px;
-    }
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-direction: column;
-  }
 `;
 
-export const Logo = styled.img`
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-bottom: 40px;
-    position: relative;
+export const Users2 = styled(FaUserFriends)`
+  color: #CECECE;
+  font-size: 5rem;
+`;
+
+export const Users3 = styled(FaUserPlus)`
+  color: #CECECE;
+  font-size: 5rem;
+`;
+
+export const IconPrices = styled.div`
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 2px solid #40A339;
+  transition: all 0.3s ease-out;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &:hover {
+    color: ${({ color }) => color || "#000"};
   }
 `;
