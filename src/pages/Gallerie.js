@@ -1,13 +1,14 @@
+import Gallery from "components/gallerie/Gallery";
 import React from "react";
-// import Footer from "../components/Footer";
-// import { BlackNav } from "../components/styles/Contact.styled";
+import Footer from "../components/Footer/Footer";
+import BlackNav from "../components/Navbar/BlackNav";
 
 export default function Gallerie() {
   return (
     <div>
-      {/* <BlackNav /> */}
-      Gallerie
-      {/* <Footer /> */}
+      <BlackNav />
+      <Gallery />
+      <Footer />
     </div>
   );
 }

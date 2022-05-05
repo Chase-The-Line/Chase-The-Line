@@ -23,7 +23,7 @@ export default function Footer() {
         <NavLink exact="true" to="/atelier" className="nav-active">
           Mon atelier
         </NavLink>
-        <NavLink exact="true" to="/contact" className="nav-active">
+        <NavLink exact="true" to="/newsletter" className="nav-active">
           Contact
         </NavLink>
         <SocialIcons />
