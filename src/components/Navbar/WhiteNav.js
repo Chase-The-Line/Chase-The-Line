@@ -59,11 +59,11 @@ export default function WhiteNav() {
                   Acceuil
                 </NavLink>
               </MenuItem>
-              <MenuItem>
+              {/* <MenuItem>
                 <NavLink onClick={closeMenu} exact="true" to="/a-propos">
                   A propos de moi
                 </NavLink>
-              </MenuItem>
+              </MenuItem> */}
               <MenuItem>
                 <NavLink onClick={closeMenu} exact="true" to="/atelier">
                   Mon atelier
