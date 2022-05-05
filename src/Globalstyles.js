@@ -99,13 +99,13 @@ export const OutlineButton = styled.button`
     transform: translateY(0.5rem);
   }
 
-  /* @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) {
     border-radius: ${({ bigRadius }) => (bigRadius ? "20px" : "18px")};
     padding: ${({ big }) => (big ? "9px 30px" : "8px 28px")};
     font-size: ${({ fontBig }) => (fontBig ? "18px" : "16px")};
-  } */
+  }
 
-  /* @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: 780px) {
     border: none;
     color: #40A339;
     padding: 1rem 2rem;
@@ -118,5 +118,5 @@ export const OutlineButton = styled.button`
       border-radius: 0;
       color: #40A339;
     }
-  } */
+  }
 `;
