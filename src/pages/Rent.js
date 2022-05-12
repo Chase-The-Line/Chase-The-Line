@@ -7,6 +7,7 @@ import prices from "data/prices";
 import Prices from "components/Price/Prices";
 import { Flex } from "components/styles/Flex.styled";
 
+
 export default function Rent() {
   return (
     <StyledRent>
@@ -21,13 +22,13 @@ export default function Rent() {
           Duis aute irure dolor in reprehenderit in voluptate velit esse{" "}
         </p>
         <div className="back">
-          <div className="">
+          <div className="">             
             <Flex>
               {" "}
               {prices.map((item, index) => (
                 <Prices key={index} item={item} />
               ))}
-            </Flex>
+            </Flex>      
           </div>
         </div>
       </Container>

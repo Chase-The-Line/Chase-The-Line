@@ -59,11 +59,11 @@ export default function WhiteNav() {
                   Home
                 </NavLink>
               </MenuItem>
-              <MenuItem>
+              {/* <MenuItem>
                 <NavLink onClick={closeMenu} exact="true" to="/a-propos">
                   A propos de moi
                 </NavLink>
-              </MenuItem>
+              </MenuItem> */}
               <MenuItem>
                 <NavLink onClick={closeMenu} exact="true" to="/atelier">
                   Mon atelier
@@ -74,16 +74,16 @@ export default function WhiteNav() {
                   Location
                 </NavLink>
               </MenuItem>
-              <MenuItem>
+              {/* <MenuItem>
                 <NavLink onClick={closeMenu} exact="true" to="/images">
                   Gallerie
                 </NavLink>
-              </MenuItem>
-              <MenuItem>
+              </MenuItem> */}
+              {/* <MenuItem>
                 <NavLink onClick={closeMenu} exact="true" to="/newsletter">
                   Newsletter
                 </NavLink>
-              </MenuItem>
+              </MenuItem> */}
             </Menu>
           </NavbarContainer>
         </Nav>

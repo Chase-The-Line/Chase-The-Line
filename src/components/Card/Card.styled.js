@@ -54,7 +54,7 @@ export const Pcard = styled.p`
   .p-card {
     margin: 2;
     color: #fff;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 132%;
     display: flex;
     align-items: center;

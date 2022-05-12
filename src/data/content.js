@@ -6,7 +6,7 @@ const content = [
   {
     id: 1,
     icon: <About />,
-    link:"./a-propos",
+    link:"/",
     title: "Qui suis-je ?",
     body: "Je m’appelle Maxime et je me lance dans la création d’un magasin de vélo.",
   },

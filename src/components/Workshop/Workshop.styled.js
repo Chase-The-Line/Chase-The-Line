@@ -69,7 +69,7 @@ export const WorksText1 = styled.p`
 `;
 
 export const WorksText = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   padding: 1rem 2rem;
   opacity: 0.6;
 `;

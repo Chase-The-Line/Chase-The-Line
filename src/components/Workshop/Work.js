@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "components/styles/Container.styled";
-
 import {
   Bicycle,
   Images,

@@ -115,7 +115,6 @@ export const Users = styled(FaUsers)`
   color: #cecece;
   font-size: 5rem;
 `;
-
 export const Users2 = styled(FaUserFriends)`
   color: #cecece;
   font-size: 5rem;

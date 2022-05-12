@@ -1,6 +1,7 @@
 import React from "react";
 import { IconPrices, StyledRent } from "./Rent.styled";
 
+
 export default function Prices({
   item: { price, nbrPers, subject, comment, choice, icon, id },
 }) {
@@ -12,7 +13,6 @@ export default function Prices({
         <p className="txt-1">{nbrPers}</p>
         <p className="txt-2">{subject}</p>
         <p className="txt-3">{comment}</p>
-        <button>{choice}</button>
       </div>
     </StyledRent>
   );
