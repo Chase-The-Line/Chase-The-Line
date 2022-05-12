@@ -1,16 +1,18 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./Globalstyles";
 import { Route, Routes } from "react-router-dom";
+
+// Pages
 // import About from "pages/About";
 // import Gallerie from "pages/Gallerie";
 import Home from "pages/Home";
-import Workshop from "pages/Workshop";
-import Rent from "pages/Rent";
+// import Workshop from "pages/Workshop";
+// import Rent from "pages/Rent";
 // import Newsletter from "pages/Newsletter";
 
 const theme = {
   colors: {
-    body: "#F9F9F9",
+    // body: "#F9F9F9",
     footer: "#003333",
   },
   mobile: "768px",
@@ -23,14 +25,14 @@ function App() {
         <GlobalStyles />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          {/* <Route path="/a-propos" exact element={<About />} /> */}
-          <Route path="/location" exact element={<Rent />} />
-          <Route path="/atelier" exact element={<Workshop />} />
+          <Route path="/a-propos" exact element={<Home />} />
+          {/* <Route path="/location" exact element={<Rent />} /> */}
+          {/* <Route path="/atelier" exact element={<Workshop />} /> */}
           {/* <Route path="/images" exact element={<Gallerie />} /> */}
           {/* <Route path="/newsletter" exact element={<Newsletter />} /> */}
         </Routes>
       </>
-    </ThemeProvider>
+      </ThemeProvider>
   );
 }
 

@@ -1,9 +1,10 @@
+import { Container } from "Globalstyles";
 import { FaLeaf } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import SocialIcons from "../SocialIcons/SocialIcons";
-import { Container } from "../styles/Container.styled";
+// import { Container } from "../styles/Container.styled";
 import { FooterCopyRight, StyledFooter } from "./Footer.styled";
-export default function Footer() {
+function Footer() {
   return (
     <StyledFooter>
       <Container>
@@ -37,3 +38,5 @@ export default function Footer() {
     </StyledFooter>
   );
 }
+
+export default Footer;

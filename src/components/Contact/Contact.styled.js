@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledContact = styled.header`
-  background-color: ${({ theme }) => theme.colors.body};
+  /* background-color: ${({ theme }) => theme.colors.body}; */
 
   p {
     font-size: 13px;

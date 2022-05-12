@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledGallery = styled.div`
-  background-color: ${({ theme }) => theme.colors.body};
+  /* background-color: ${({ theme }) => theme.colors.body}; */
   margin: 0;
   padding: 50px;
   box-sizing: border-box;

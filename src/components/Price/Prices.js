@@ -6,13 +6,18 @@ export default function Prices({
 }) {
   return (
     <StyledRent>
-      <div className="group">
-        <p className="price">{price}</p>
-        <IconPrices>{icon}</IconPrices>
-        <p className="txt-1">{nbrPers}</p>
-        <p className="txt-2">{subject}</p>
-        <p className="txt-3">{comment}</p>
-        <button>{choice}</button>
+      <div
+        className="easyloisirs_module"
+        data-hash="5a819170bb53e8f0cd280e806ad6835af3b5bf04"
+      >
+        <div className="group">
+          <p className="price">{price}</p>
+          <IconPrices>{icon}</IconPrices>
+          <p className="txt-1">{nbrPers}</p>
+          <p className="txt-2">{subject}</p>
+          <p className="txt-3">{comment}</p>
+          <button>{choice}</button>
+        </div>
       </div>
     </StyledRent>
   );
