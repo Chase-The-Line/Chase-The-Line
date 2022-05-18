@@ -2,7 +2,7 @@ import { FaUserFriends, FaUserPlus, FaUsers } from "react-icons/fa";
 import styled from "styled-components";
 
 export const StyledRent = styled.header`
-  background-color: ${({ theme }) => theme.colors.body};
+  /* background-color: ${({ theme }) => theme.colors.body}; */
 
   h1 {
     font-family: Montserrat, sans-serif;

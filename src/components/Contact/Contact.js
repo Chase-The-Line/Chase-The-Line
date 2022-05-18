@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "components/styles/Container.styled";
 // import { FaTwitter, FaGoogle, FaFacebook } from "react-icons/fa";
 import { Flex } from "components/styles/Flex.styled";
-import { StyledDivCard } from "components/Card/DivCard.styled";
+// import { StyledDivCard } from "components/Card/DivCard.styled";
 // import { useForm } from "react-hook-form";
 
 export default function Contact() {
@@ -11,7 +11,7 @@ export default function Contact() {
       {" "}
       <Container>
         <Flex>
-          <StyledDivCard>
+          {/* <StyledDivCard> */}
             <form>
               <h1>Inscrivez-vous à la Newsletter</h1>
               <p>
@@ -52,7 +52,7 @@ export default function Contact() {
               height="525"
               className="image"
             />
-          </StyledDivCard>
+          {/* </StyledDivCard> */}
         </Flex>
       </Container>
     </div>
