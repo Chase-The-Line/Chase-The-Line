@@ -4,10 +4,10 @@ const Menu = [
     text: "A propos",
     id: "a-propos",
   },
-  // {
-  //   to: "/atelier",
-  //   text: "Mon Atelier",
-  // },
+  {
+    to: "/location",
+    text: "Location",
+  },
   // {
   //   to: "/newsletter",
   //   text: "Newsletter",
