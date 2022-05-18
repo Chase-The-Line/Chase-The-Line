@@ -6,6 +6,7 @@ import BlackNav from "components/Navbar/BlackNav";
 import prices from "data/prices";
 import Prices from "components/Price/Prices";
 import { Flex } from "components/styles/Flex.styled";
+// import { Btn } from "components/Hero/Hero.styled";
 
 
 export default function Rent() {
