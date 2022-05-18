@@ -3,9 +3,10 @@ import Footer from "components/Footer/Footer";
 import { StyledRent } from "components/Price/Rent.styled";
 import { Container } from "components/styles/Container.styled";
 import BlackNav from "components/Navbar/BlackNav";
-import prices from "data/prices";
 import Prices from "components/Price/Prices";
 import { Flex } from "components/styles/Flex.styled";
+import prices from "data/prices";
+// import Prices from "components/Price/Prices";
 
 export default function Rent() {
   return (
@@ -35,3 +36,12 @@ export default function Rent() {
     </StyledRent>
   );
 }
+
+// import Prices from 'components/Price/Prices';
+// import React from 'react';
+
+// const Rent = () => {
+// 	return <Prices />;
+// };
+
+// export default Rent;

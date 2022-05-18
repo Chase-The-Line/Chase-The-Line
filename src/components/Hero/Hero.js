@@ -84,7 +84,7 @@ import {
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroVideo src="./forest.mp4" muted loop autoPlay />
+      {/* <HeroVideo src="./forest.mp4" muted loop autoPlay /> */}
       <Container>
         <HeroSubTitle>Conquer the forest</HeroSubTitle>
         <HeroText>

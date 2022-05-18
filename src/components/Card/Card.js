@@ -34,7 +34,7 @@ import {
 // import { featuresData } from '../../data/FeaturesData';
 import content from "../../data/content";
 
-const Card = () => {
+const Card = (linkTo, id) => {
   const initial = {
     y: 40,
     opacity: 0,
@@ -50,23 +50,24 @@ const Card = () => {
         <FeatureTextWrapper>
           <FeatureTitle>Bienvenue sur Chase The Line</FeatureTitle>
         </FeatureTextWrapper>
-        <FeatureWrapper>
-          {content.map((el, index) => (
-            <FeatureColumn
-              initial={initial}
-              animate={animate}
-              transition={{ duration: 0.5 + index * 0.1 }}
-              key={index}
-            >
-              <FeatureImageWrapper className={el.imgClass}>
-                {el.icon}
-              </FeatureImageWrapper>
-              <FeatureName>{el.name}</FeatureName>
-              <FeatureText>{el.description}</FeatureText>
-			
-            </FeatureColumn>
-          ))}
-        </FeatureWrapper>
+        <a href={linkTo} className="link">
+          <FeatureWrapper>
+            {content.map((el, index) => (
+              <FeatureColumn
+                initial={initial}
+                animate={animate}
+                transition={{ duration: 0.5 + index * 0.1 }}
+                key={index}
+              >
+                <FeatureImageWrapper className={el.imgClass}>
+                  {el.icon}
+                </FeatureImageWrapper>
+                <FeatureName>{el.name}</FeatureName>
+                <FeatureText>{el.description}</FeatureText>
+              </FeatureColumn>
+            ))}
+          </FeatureWrapper>
+        </a>
       </Container>
     </Section>
   );
