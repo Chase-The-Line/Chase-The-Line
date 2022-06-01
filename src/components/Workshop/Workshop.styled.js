@@ -2,15 +2,29 @@ import styled from "styled-components";
 import { Container } from "../../Globalstyles";
 import { FaBicycle, FaImages } from "react-icons/fa";
 
-export const StyledWorkshop = styled.header`
-  background-image: url("./images/background-workshop.svg");
+// export const StyledWorkshop = styled.header`
+//   background-image: url("./images/chaine.jpg");
+//   /* background-size: cover; */
+//   background-repeat: no-repeat;
+
+//   .france {
+//     margin-bottom: -54px;
+//   }
+
+//   .link {
+//     text-decoration: none;
+//     color: #000;
+//   }
+// `;
+
+export const WorkSection = styled.header`
+  background-image: url("./images/chaine.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  .france {
-    margin-bottom: -54px;
-  }
-
+  padding-top: clamp(70px, 25vh, 150px);
+  margin-bottom: -54px;
+  box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
   .link {
     text-decoration: none;
     color: #000;
@@ -32,10 +46,9 @@ export const WorkContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 8rem;
+  /* padding: 5rem 8rem; */
   color: #333333;
   align-items: stretch;
-
   ${Container};
 `;
 
@@ -46,6 +59,7 @@ export const WorkTitle1 = styled.h1`
   font-size: 48px;
   line-height: 140%;
   color: #fff;
+  margin-bottom: 100px;
 `;
 
 export const WorkTitle2 = styled.h3`
@@ -65,11 +79,10 @@ export const WorksText1 = styled.p`
   font-weight: 400;
   color: #fff;
   line-height: 140%;
-  letter-spacing: -0.02em;
 `;
 
 export const WorksText = styled.p`
-  font-size: 1.0rem;
+  font-size: 1rem;
   padding: 1rem 2rem;
   opacity: 0.6;
 `;
@@ -79,7 +92,6 @@ export const WorkCard = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 30rem;
   margin: 20px;
   background-color: #fff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);

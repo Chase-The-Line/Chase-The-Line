@@ -1,11 +1,11 @@
 import React from "react";
-import { Container } from "components/styles/Container.styled";
 import {
   Bicycle,
   Images,
   WorkCard,
   WorkContainer,
   WorkContent,
+  WorkSection,
   WorksIconContainer,
   WorksText,
   WorksText1,
@@ -13,10 +13,11 @@ import {
   WorkTitle2,
 } from "./Workshop.styled";
 import { FaLeaf } from "react-icons/fa";
+import { Container } from "Globalstyles";
 
 export default function Work() {
   return (
-    <div>
+    <WorkSection>
       <Container>
         <WorkTitle1>Mon atelier</WorkTitle1>
         <WorksText1>
@@ -42,7 +43,6 @@ export default function Work() {
                   </WorksText>
                 </WorkCard>
               </a>
-
               <a className="link" href="/images">
                 <WorkCard>
                   <WorksIconContainer>
@@ -61,7 +61,7 @@ export default function Work() {
           </WorkContainer>
         </div>
       </Container>
-      <img src="./images/france.svg" alt="france" className="france" />
-    </div>
+      {/* <img src="./images/france.svg" alt="france" className="france" /> */}
+    </WorkSection>
   );
 }

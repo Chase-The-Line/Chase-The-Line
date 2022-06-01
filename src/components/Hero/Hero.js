@@ -74,17 +74,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Container, HeroSubTitle } from "../../Globalstyles";
 import {
-  HeroVideo,
   HeroSection,
   HeroText,
   ButtonWrapper,
-  // HeroButton,
 } from "./Hero.styled";
 
 const Hero = () => {
   return (
     <HeroSection>
-      {/* <HeroVideo src="./forest.mp4" muted loop autoPlay /> */}
       <Container>
         <HeroSubTitle>Conquer the forest</HeroSubTitle>
         <HeroText>

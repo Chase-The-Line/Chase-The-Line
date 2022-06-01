@@ -29,12 +29,11 @@ import {
   FeatureImageWrapper,
   FeatureName,
   FeatureTextWrapper,
-  FeatureTag,
+  Links,
 } from "./Card.styled";
-// import { featuresData } from '../../data/FeaturesData';
 import content from "../../data/content";
 
-const Card = (linkTo, id) => {
+const Card = () => {
   const initial = {
     y: 40,
     opacity: 0,
@@ -50,9 +49,9 @@ const Card = (linkTo, id) => {
         <FeatureTextWrapper>
           <FeatureTitle>Bienvenue sur Chase The Line</FeatureTitle>
         </FeatureTextWrapper>
-        <a href={linkTo} className="link">
-          <FeatureWrapper>
-            {content.map((el, index) => (
+        <FeatureWrapper>
+          {content.map((el, index) => (
+            <Links href={el.link}>
               <FeatureColumn
                 initial={initial}
                 animate={animate}
@@ -65,9 +64,9 @@ const Card = (linkTo, id) => {
                 <FeatureName>{el.name}</FeatureName>
                 <FeatureText>{el.description}</FeatureText>
               </FeatureColumn>
-            ))}
-          </FeatureWrapper>
-        </a>
+            </Links>
+          ))}
+        </FeatureWrapper>
       </Container>
     </Section>
   );

@@ -101,7 +101,7 @@ export const FeatureColumn = styled(motion.div)`
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background: #f3f3f3;
+  background: #003333;
   padding: 10px;
   box-shadow: 0 0 32px 8px #d0d0d0;
   border-radius: 20px;
@@ -109,10 +109,9 @@ export const FeatureColumn = styled(motion.div)`
 
 export const FeatureImageWrapper = styled.div`
   margin-bottom: 1rem;
-  border-radius: 50%;
-  border: 2px solid #000;
-
-  padding: 30px;
+  border-radius: 20%;
+  border: 2px solid #fff;
+  padding: 20px;
 `;
 export const FeatureName = styled.h3`
   font-weight: 600;
@@ -125,17 +124,21 @@ export const FeatureName = styled.h3`
     letter-spacing: 1.3px;
   }
 `;
+
+export const Links = styled.a`
+  text-decoration: none;
+  color: white;
+`;
+
 export const FeatureText = styled.p`
   margin: 1rem 0 auto;
   text-align: center;
   font-size: 0.9rem;
   line-height: 1.73;
   letter-spacing: 0.5px;
-  color: #626881;
+  color: #fff;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
-

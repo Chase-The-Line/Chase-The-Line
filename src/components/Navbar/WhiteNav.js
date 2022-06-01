@@ -39,12 +39,12 @@ export default function WhiteNav() {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <Logo
+              {/* <Logo
                 src="./images/logo.svg"
                 width="100"
                 height="100"
                 alt="logo"
-              />
+              /> */}
             </NavLogo>
             <MenuIcon onClick={handleClick}>
               {click ? <BiX /> : <BiMenu />}

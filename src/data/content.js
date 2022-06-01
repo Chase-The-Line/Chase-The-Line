@@ -27,17 +27,12 @@
 // export default content;
 
 import React from "react";
-
-// import { BsFillShieldLockFill } from "react-icons/bs";
-// import { IoIosOptions } from "react-icons/io";
-// import { AiOutlineCloudUpload } from "react-icons/ai";
-import { BiNews } from "react-icons/bi";
-// import { GrHostMaintenance } from "react-icons/gr";
+import { IoMdBicycle } from "react-icons/io";
+import { IoIosSettings } from "react-icons/io";
 import { RiChat1Fill } from "react-icons/ri";
-import { FaBicycle } from "react-icons/fa";
-const iconStyle = (Icon) => <Icon size="3rem" color="#0f0f0f" />;
+const iconStyle = (Icon) => <Icon size="3rem" color="#fff" />;
 
-export const content = [
+const content = [
   {
     id: 1,
     name: "Qui suis-je ?",
@@ -45,24 +40,25 @@ export const content = [
       "Je m’appelle Maxime et je me lance dans la création d’un magasin de vélo.",
     icon: iconStyle(RiChat1Fill),
     imgClass: "one",
-    linkTo: "/location",
+    // link: "./a-propos",
+  
   },
   {
     id: 2,
     name: "Mon atelier",
     description:
       "Chase The Line c'est un  atelier de réparation et d’entretien de cycle et suspensions.",
-    icon: iconStyle(FaBicycle),
+    icon: iconStyle(IoIosSettings),
     imgClass: "two",
-    linkTo: "/atelier",
+    link: "./atelier",
   },
   {
     id: 3,
-    name: "Newsletter",
-    description: "Inscrivez-vous pour ne rien rater et garder contact.",
-    icon: iconStyle(BiNews),
+    name: "Location",
+    description: "Si vous souhaitez partir à l'aventure c'est ici...",
+    icon: iconStyle(IoMdBicycle),
     imgClass: "three",
-    // linkTo: "./newsletter",
+    link: "./location",
   },
 ];
 
