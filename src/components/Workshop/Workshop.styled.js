@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../../Globalstyles";
-import { FaBicycle, FaImages } from "react-icons/fa";
-
+import { FaImages } from "react-icons/fa";
+import { IoIosSettings } from "react-icons/io";
 // export const StyledWorkshop = styled.header`
 //   background-image: url("./images/chaine.jpg");
 //   /* background-size: cover; */
@@ -97,30 +97,27 @@ export const WorkCard = styled.div`
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   transition: all 0.5s ease;
-
   &:hover {
     box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.21);
     transform: scale(1.05);
-    background-color: #40a339;
+    background-color: #003333;
     color: #fff;
   }
 `;
 
-export const Bicycle = styled(FaBicycle)`
-  color: #000;
+export const Bicycle = styled(IoIosSettings)`
   font-size: 5rem;
 `;
 
 export const Images = styled(FaImages)`
-  color: #000;
   font-size: 5rem;
 `;
 
 export const WorksIconContainer = styled.div`
-  width: 9rem;
-  height: 9rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
-  border: 2px solid #40a339;
+  /* border: 2px solid #003337; */
   transition: all 0.3s ease-out;
   margin-top: 2rem;
   display: flex;

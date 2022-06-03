@@ -14,7 +14,6 @@ import {
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
-import { Link } from "react-router-dom";
 
 export const Content = ({
   primary,

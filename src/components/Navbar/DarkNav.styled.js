@@ -8,7 +8,7 @@
 //   top: 0;
 //   z-index: 999;
 //   height: 80px;
-//   background-color: #faf9f7;
+//   background-color : hsla(0,0%,0%,0.5);
 //   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 //   display: flex;
 //   justify-content: center;
@@ -24,7 +24,7 @@
 // `;
 
 // export const NavLogo = styled(Link)`
-//   color: #000;
+//   color: #fff;
 //   cursor: pointer;
 //   display: flex;
 //   align-items: center;
@@ -39,14 +39,10 @@
 
 // export const MenuIcon = styled.div`
 //   display: none;
-//   margin-right: 1rem;
-// 	width: 3rem;
 
 //   @media (max-width: 1000px) {
 //     display: block;
 //     position: absolute;
-//     /* background-color: #000; */
-//     color: #000;
 //     top: 0;
 //     right: 0;
 //     transform: translate(-50%, 20%);
@@ -68,7 +64,7 @@
 //     position: absolute;
 //     top: 80px;
 //     left: ${({ click }) => (click ? "0" : "-100%")};
-//     background-color: #faf9f7;
+//     background-color: rgba(0, 0, 0, 0.9);
 //     transition: all 0.5s ease;
 //   }
 // `;
@@ -89,7 +85,7 @@
 //   text-decoration: none;
 //   font-weight: bold;
 //   font-size: 15px;
-//   color: #000;
+//   color: #fff;
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
@@ -121,7 +117,7 @@ import { Container } from "../../Globalstyles";
 import { Link, NavLink } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: hsla(0, 0%, 0%, 0.5);
+  background-color: #242424;
   margin-bottom: -80px;
   height: 80px;
   display: flex;
@@ -134,32 +130,6 @@ export const Nav = styled.nav`
   width: 100%;
 
   transition: background-color 0.3s ease-in;
-`;
-
-export const StyledSocialIcons = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-
-  li {
-    list-style: none;
-  }
-
-  a {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    height: 40px;
-    width: 40px;
-    text-decoration: none;
-    display: flex;
-	
-  }
 `;
 
 export const NavbarContainer = styled(Container)`

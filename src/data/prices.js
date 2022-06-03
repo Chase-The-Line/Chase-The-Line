@@ -32,34 +32,35 @@
 
 // export default prices;
 
-
-
 /**************************** */
 
-
-import { Users, Users2, Users3 } from "components/Price/Rent.styled";
+import { HiUserAdd, HiUserGroup, HiUsers } from "react-icons/hi";
+const iconStyle = (Icon) => <Icon size="3rem" color="#fff" />;
 
 const prices = [
   {
     id: 1,
+    icon: iconStyle(HiUserAdd),
     title: "Location",
-    price: "50€ /1 à 7 personnes",
+    price: "50€",
+    pers: "/ 1 à 7 personnes",
     features: ["Encadrement cyclisme", "casques protecteurs inclus."],
-    icon: <Users3 />,
   },
   {
     id: 2,
+    icon: iconStyle(HiUserGroup),
     title: "Location",
-    price: "55€ /3 à 4 personnes",
+    price: "55€ ",
+    pers: "/ 3 à 4 personnes",
     features: ["Encadrement cyclisme", "casques protecteurs inclus."],
-    icon: <Users />,
   },
   {
     id: 3,
+    icon: iconStyle(HiUsers),
     title: "Location",
-    price: "60€ /1 à 2 personnes",
+    price: "60€ ",
+    pers: "/ 1 à 2 personnes",
     features: ["Encadrement cyclisme", "casques protecteurs inclus."],
-    icon: <Users2 />,
   },
 ];
 

@@ -39,12 +39,12 @@
 import Footer from "components/Footer/Footer";
 import Prices from "components/Price/Prices";
 import React from "react";
-import BlackNav from "components/Navbar/BlackNav";
+import DarkNav from "components/Navbar/DarkNav";
 
 const Rent = () => {
   return (
     <div>
-      <BlackNav />
+      <DarkNav />
       <Prices />
       <Footer />
     </div>
