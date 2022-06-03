@@ -39,20 +39,30 @@ import {
 
 import prices from "data/prices";
 
-export default function Prices({icon, id}) {
+export default function Prices({ icon, id }) {
   return (
     <IconContext.Provider value={{ color: "#a9b3c1", size: "1rem" }}>
       <PricingSection id="pricing">
         <PricingWrapper>
           <Heading2 color="black">Grille tarifaire location</Heading2>
           <TextWrapper
+            mt="1.4rem"
             mb="1.4rem"
-            weight="600"
+            weight="300"
             size="1.1rem"
             color="black"
             align="center"
           >
             Veuillez choisir le plan qui vous convient.
+          </TextWrapper>
+          <TextWrapper
+            weight="300"
+            size="1.1rem"
+            color="black"
+            align="center"
+          >
+            Réservation uniquement par téléphone au 06 XX XX XX XX ou par email
+            chasetheline@gmail.com
           </TextWrapper>
           <PricingContainer>
             {prices.map((card, index) => (
