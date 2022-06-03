@@ -153,7 +153,8 @@ export const PricingSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background: #101522; */
+  /* background: #003333;
+  margin-bottom: -54px; */
 `;
 
 export const PricingWrapper = styled.div`
@@ -173,6 +174,7 @@ export const PricingWrapper = styled.div`
 export const PricingContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 50px;
   flex-flow: wrap;
   > div {
     margin: 0.7rem;

@@ -14,6 +14,7 @@ import {
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Content = ({
   primary,
@@ -25,6 +26,7 @@ export const Content = ({
   alt,
   inverse,
   reverse,
+  linkTo
 }) => {
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
@@ -69,6 +71,7 @@ export const Content = ({
               >
                 {description}
               </Subtitle>
+              <a href={linkTo}>
               <ContentButton
                 initial={initial}
                 transition={{ delay: 1, duration: 0.6 }}
@@ -77,7 +80,9 @@ export const Content = ({
                 primary={primary}
               >
                 {buttonLabel}
+                
               </ContentButton>
+              </a>
             </TextWrapper>
           </ContentColumn>
           <ContentColumn

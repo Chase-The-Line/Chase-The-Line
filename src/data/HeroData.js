@@ -21,7 +21,7 @@ export const heroTwo = {
 	headline: 'Mon atelier',
 	description: "Chase The Line c'est un atelier de réparation et entretien cycle et suspensions ! Il sera aussi bientôt possible de louer des VTT à assistance électrique pour des balades encadrées et une possibilité de faire du coaching personnalisé !",
 	buttonLabel: 'En savoir plus',
-	linkTo: '/more',
+	linkTo: './atelier',
 	imgStart: 'start',
 	img: './images/image4.svg',
 	start: 'true',

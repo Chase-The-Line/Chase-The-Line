@@ -210,7 +210,7 @@ export const Heading2 = styled.h2`
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
   color: ${({ inverse }) => (inverse ? "$fff" : "#003333")};
-  letter-spacing: 0.4rem;
+  /* letter-spacing: 0.4rem; */
   line-height: 1.06;
   text-align: center;
   width: ${({ width }) => (width ? width : "100%")};
