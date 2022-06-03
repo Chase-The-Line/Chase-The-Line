@@ -29,7 +29,7 @@ export default function Work() {
         <div>
           <WorkContainer>
             <WorkContent>
-              <a className="link" href="/">
+              <a className="link" href="/atelier">
                 <WorkCard>
                   <WorksIconContainer>
                     <Bicycle />
@@ -43,8 +43,8 @@ export default function Work() {
                   </WorksText>
                 </WorkCard>
               </a>
-              <a className="link" href="/images">
-                <WorkCard>
+              {/* <a className="link" href="/images"> */}
+                {/* <WorkCard>
                   <WorksIconContainer>
                     <Images />
                   </WorksIconContainer>
@@ -55,8 +55,8 @@ export default function Work() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam.
                   </WorksText>
-                </WorkCard>
-              </a>
+                </WorkCard> */}
+              {/* </a> */}
             </WorkContent>
           </WorkContainer>
         </div>
