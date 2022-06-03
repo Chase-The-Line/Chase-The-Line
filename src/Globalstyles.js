@@ -290,7 +290,7 @@ export const Button = styled.button`
   cursor: pointer;
   overflow: hidden;
   position: relative;
-
+  visibility: hidden;
   &:before {
     background: #fff;
     content: "";

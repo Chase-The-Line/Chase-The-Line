@@ -6,10 +6,10 @@ export const heroOne = {
 	},
 	headline: "A propos de moi",
 	description: "Bonjour à tous, je m’appelle Maxime et je me lance dans la création d’un magasin de vélo. Celui-ci comprendrait : vente, entretien, réparation ainsi que des sorties encadrées et une école pour apprendre la discipline. Il serait situé sur le secteur de St Léonard des Bois, dans la Sarthe. Le but est de créer et développer un espace loisir convivial qui deviendrait également un lieu de rendez-vous",
-	buttonLabel: 'Voir plus',
+	// buttonLabel: 'Voir plus',
 	imgStart: 'start',
 	img: './images/image.jpg',
-	start: 'true',
+	// start: 'true',
 };
 
 export const heroTwo = {
@@ -36,8 +36,8 @@ export const heroThree = {
 	headline: 'Location',
 	description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 	buttonLabel: 'Voir plus',
-	linkTo: '/location',
-	imgStart: '',
+	linkTo: './location',
+	imgStart: 'start',
 	img: './images/biking.svg',
 	start: 'true',
 };
