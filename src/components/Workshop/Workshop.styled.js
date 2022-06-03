@@ -93,6 +93,7 @@ export const WorkCard = styled.div`
   align-items: center;
   text-align: center;
   margin: 20px;
+  margin-bottom: 25vh;
   background-color: #fff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
   border-radius: 20px;
