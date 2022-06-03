@@ -37,32 +37,29 @@ import { RiChat1Fill } from "react-icons/ri";
 import { FaBicycle } from "react-icons/fa";
 const iconStyle = (Icon) => <Icon size="3rem" color="#0f0f0f" />;
 
-export const content = [
+const content = [
   {
-    id: 1,
     name: "Qui suis-je ?",
     description:
       "Je m’appelle Maxime et je me lance dans la création d’un magasin de vélo.",
     icon: iconStyle(RiChat1Fill),
     imgClass: "one",
-    linkTo: "/location",
+    link: "/",
   },
   {
-    id: 2,
     name: "Mon atelier",
     description:
       "Chase The Line c'est un  atelier de réparation et d’entretien de cycle et suspensions.",
     icon: iconStyle(FaBicycle),
     imgClass: "two",
-    linkTo: "/atelier",
+    link: "./atelier",
   },
   {
-    id: 3,
     name: "Newsletter",
     description: "Inscrivez-vous pour ne rien rater et garder contact.",
     icon: iconStyle(BiNews),
     imgClass: "three",
-    // linkTo: "./newsletter",
+    link: "./newsletter",
   },
 ];
 

@@ -125,6 +125,7 @@ export const FeatureName = styled.h3`
     letter-spacing: 1.3px;
   }
 `;
+
 export const FeatureText = styled.p`
   margin: 1rem 0 auto;
   text-align: center;

@@ -34,7 +34,7 @@ import {
 // import { featuresData } from '../../data/FeaturesData';
 import content from "../../data/content";
 
-const Card = (linkTo, id) => {
+const Card = (link, id) => {
   const initial = {
     y: 40,
     opacity: 0,
@@ -43,6 +43,7 @@ const Card = (linkTo, id) => {
     y: 0,
     opacity: 1,
   };
+  
 
   return (
     <Section smPadding="50px 10px" position="relative" inverse id="a-propos">
@@ -50,7 +51,7 @@ const Card = (linkTo, id) => {
         <FeatureTextWrapper>
           <FeatureTitle>Bienvenue sur Chase The Line</FeatureTitle>
         </FeatureTextWrapper>
-        <a href={linkTo} className="link">
+        <a href={content.link} className="link">
           <FeatureWrapper>
             {content.map((el, index) => (
               <FeatureColumn
