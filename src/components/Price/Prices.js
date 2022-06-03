@@ -1,11 +1,11 @@
 // import React from "react";
 // import { IconPrices, StyledRent } from "./Rent.styled";
+// import prices from "data/prices";
 
-// export default function Prices({
-//   item: { price, nbrPers, subject, comment, choice, icon, id },
-// }) {
+// export default function Prices() {
 //   return (
 //     <StyledRent>
+//       {prices.map((price, nbrPers, subject, comment, choice, icon, id) => (
 //         <div className="group">
 //           <p className="price">{price}</p>
 //           <IconPrices>{icon}</IconPrices>
@@ -14,10 +14,10 @@
 //           <p className="txt-3">{comment}</p>
 //           <button>{choice}</button>
 //         </div>
+//       ))}
 //     </StyledRent>
 //   );
 // }
-
 
 /********************** */
 
@@ -35,12 +35,11 @@ import {
   PricingCardText,
   PricingCardFeature,
   PricingCard,
-  IconPrices,
 } from "./Rent.styled";
 
 import prices from "data/prices";
 
-export default function Prices(icon, id) {
+export default function Prices({icon, id}) {
   return (
     <IconContext.Provider value={{ color: "#a9b3c1", size: "1rem" }}>
       <PricingSection id="pricing">
@@ -56,7 +55,6 @@ export default function Prices(icon, id) {
             Veuillez choisir le plan qui vous convient.
           </TextWrapper>
           <PricingContainer>
-            <IconPrices>{icon}</IconPrices>
             {prices.map((card, index) => (
               <PricingCard key={index}>
                 <PricingCardInfo>
