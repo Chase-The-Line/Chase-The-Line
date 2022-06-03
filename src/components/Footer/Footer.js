@@ -18,14 +18,14 @@ function Footer() {
         <NavLink exact="true" to="/" className="nav-active">
           Home
         </NavLink>
-        <NavLink exact="true" to="/a-propos" className="nav-active">
+        {/* <NavLink exact="true" to="/a-propos" className="nav-active">
           A propos de moi
-        </NavLink>
+        </NavLink> */}
         <NavLink exact="true" to="/atelier" className="nav-active">
           Mon atelier
         </NavLink>
-        <NavLink exact="true" to="/newsletter" className="nav-active">
-          Contact
+        <NavLink exact="true" to="/location" className="nav-active">
+          Location
         </NavLink>
         <SocialIcons />
         <FooterCopyRight>

@@ -35,6 +35,10 @@ import {
   PricingCardText,
   PricingCardFeature,
   PricingCard,
+  Icon,
+  Icons,
+  PricingCardPers,
+  IconsWorkshop,
 } from "./Rent.styled";
 
 import prices from "data/prices";
@@ -55,12 +59,7 @@ export default function Prices({ icon, id }) {
           >
             Veuillez choisir le plan qui vous convient.
           </TextWrapper>
-          <TextWrapper
-            weight="300"
-            size="1.1rem"
-            color="black"
-            align="center"
-          >
+          <TextWrapper weight="300" size="1.1rem" color="black" align="center">
             Réservation uniquement par téléphone au 06 XX XX XX XX ou par email
             chasetheline@gmail.com
           </TextWrapper>
@@ -68,8 +67,11 @@ export default function Prices({ icon, id }) {
             {prices.map((card, index) => (
               <PricingCard key={index}>
                 <PricingCardInfo>
+                  <IconsWorkshop> {card.icon}</IconsWorkshop>
                   <PricingCardPlan>{card.title}</PricingCardPlan>
                   <PricingCardCost>{card.price}</PricingCardCost>
+                  <PricingCardPers>{card.pers}</PricingCardPers>
+                  <hr />
                   <PricingCardText>{card.description}</PricingCardText>
                   <PricingCardFeatures>
                     {card.features.map((feature, index) => (

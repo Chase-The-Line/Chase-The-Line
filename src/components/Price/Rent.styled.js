@@ -142,7 +142,6 @@
 //   }
 // `;
 
-
 /*********************************** */
 
 import styled from "styled-components";
@@ -155,6 +154,12 @@ export const PricingSection = styled.div`
   justify-content: center;
   /* background: #003333;
   margin-bottom: -54px; */
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 20px;
+  }
 `;
 
 export const PricingWrapper = styled.div`
@@ -231,13 +236,25 @@ export const PricingCardInfo = styled.div`
   }
 `;
 
+export const IconsWorkshop = styled.div`
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+`;
+
 export const PricingCardPlan = styled.h3`
+  margin-top: 20px;
   margin-bottom: 5px;
   font-size: 2rem;
 `;
 
 export const PricingCardCost = styled.h4`
+  font-size: 1.8rem;
+`;
+
+export const PricingCardPers = styled.h4`
   font-size: 1.2rem;
+  margin-top: 20px;
 `;
 
 export const PricingCardText = styled.p`
@@ -263,6 +280,13 @@ export const PricingCardFeature = styled.li`
     content: "🚴";
     margin-right: 0.4rem;
   }
+`;
+
+export const Icons = styled.div`
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 `;
 
 export const IconPrices = styled.div`
