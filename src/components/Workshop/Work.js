@@ -1,67 +1,75 @@
 import React from "react";
 import {
-  Bicycle,
-  Images,
-  WorkCard,
-  WorkContainer,
-  WorkContent,
+  Heading2,
+  PricingCardFeature,
+  PricingCardInfo,
+  PricingCardPlan,
   WorkSection,
-  WorksIconContainer,
-  WorksText,
-  WorksText1,
-  WorkTitle1,
-  WorkTitle2,
 } from "./Workshop.styled";
-import { FaLeaf } from "react-icons/fa";
-import { Container } from "Globalstyles";
+import { Button, TextWrapper } from "Globalstyles";
+import {
+  IconsWorkshop,
+  PricingCard,
+  PricingCardCost,
+  PricingCardFeatures,
+  PricingCardPers,
+  PricingCardText,
+  PricingCardTime,
+  PricingContainer,
+  PricingSection,
+  PricingWrapper,
+} from "components/Price/Rent.styled";
+import workshopPrice from "data/workshopPrice";
+import { IconContext } from "react-icons/lib";
 
 export default function Work() {
   return (
-    <WorkSection>
-      <Container>
-        <WorkTitle1>Mon atelier</WorkTitle1>
-        <WorksText1>
-          Chase The Line c'est un atelier de réparation et entretien cycle et
-          suspensions ! Il sera aussi bientôt possible de louer des VTT à
-          assistance électrique pour des balades encadrées et une possibilité de
-          faire du coaching personnalisé !
-        </WorksText1>
-        <div>
-          <WorkContainer>
-            <WorkContent>
-              <a className="link" href="/atelier">
-                <WorkCard>
-                  <WorksIconContainer>
-                    <Bicycle />
-                  </WorksIconContainer>
-                  <WorkTitle2> Voir les tarifs atelier</WorkTitle2>
-                  <FaLeaf />
-                  <WorksText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </WorksText>
-                </WorkCard>
-              </a>
-              {/* <a className="link" href="/images"> */}
-                {/* <WorkCard>
-                  <WorksIconContainer>
-                    <Images />
-                  </WorksIconContainer>
-                  <WorkTitle2> Ma gallerie d'images</WorkTitle2>
-                  <FaLeaf />
-                  <WorksText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </WorksText>
-                </WorkCard> */}
-              {/* </a> */}
-            </WorkContent>
-          </WorkContainer>
-        </div>
-      </Container>
-      {/* <img src="./images/france.svg" alt="france" className="france" /> */}
-    </WorkSection>
+    <IconContext.Provider value={{ color: "#a9b3c1", size: "1rem" }}>
+      <WorkSection>
+        <PricingSection id="pricing">
+          <PricingWrapper>
+            <Heading2 color="#fff">Mon atelier</Heading2>
+            <TextWrapper
+              mt="1.4rem"
+              mb="1.4rem"
+              weight="300"
+              size="1.1rem"
+              color="#fff"
+              align="center"
+            >
+              Pas de jaloux tous les vélos peuvent venir à l'atelier !
+              L'entretien de vos suspensions ? C'est aussi ici que ça se passe.
+            </TextWrapper>
+            <div>
+              <PricingContainer>
+                {workshopPrice.map((card, index) => (
+                  <PricingCard key={index}>
+                    <PricingCardInfo>
+                      <IconsWorkshop> {card.icon}</IconsWorkshop>
+                      <PricingCardPlan>{card.title}</PricingCardPlan>
+                      <PricingCardTime>{card.time}</PricingCardTime>
+                      <PricingCardPers>{card.pers}</PricingCardPers>
+                      <hr />
+                      <PricingCardText>{card.description}</PricingCardText>
+                      <PricingCardFeatures>
+                        {card.features.map((feature, index) => (
+                          <PricingCardFeature key={index}>
+                            {feature}
+                            <PricingCardCost>{card.price}</PricingCardCost>
+                            <PricingCardCost>{card.price2}</PricingCardCost>
+                            <PricingCardCost>{card.price3}</PricingCardCost>
+                          </PricingCardFeature>
+                        ))}
+                      </PricingCardFeatures>
+                      <Button>Get Started</Button>
+                    </PricingCardInfo>
+                  </PricingCard>
+                ))}
+              </PricingContainer>
+            </div>
+          </PricingWrapper>
+        </PricingSection>
+      </WorkSection>
+    </IconContext.Provider>
   );
 }

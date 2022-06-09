@@ -10,23 +10,19 @@ export default function Footer() {
   return (
     <StyledFooter>
       <StyledDivCard>
-        <img src="./images/mairie.svg" alt="city hall" />
+        <img src="./images/acceuil.jpg" width="100%" height="560" alt="" />
         <GoogleMap />
       </StyledDivCard>
       <Container>
         <img src="./images/LogoFooter.svg" alt="logo" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt.
+          Sur un vélo on boit de l'eau ! Une fois sur terre on boit de la bière
+          !
         </p>
 
         <NavLink exact="true" to="/" className="nav-active">
           Home
         </NavLink>
-        {/* <NavLink exact="true" to="/a-propos" className="nav-active">
-          A propos de moi
-        </NavLink> */}
         <NavLink exact="true" to="/atelier" className="nav-active">
           Mon atelier
         </NavLink>
@@ -36,9 +32,7 @@ export default function Footer() {
         <SocialIcons />
         <FooterCopyRight>
           &copy; 2022 Chase The Line. Tous droits réservés{" "}
-          <div className="leaf">
             <FaLeaf />
-          </div>
         </FooterCopyRight>
       </Container>
     </StyledFooter>

@@ -10,6 +10,7 @@ import {
   ImgWrapper,
   Img,
   ContentColumn,
+  Subtitle2,
 } from "./ContentStyles.js";
 
 import { useInView } from "react-intersection-observer";
@@ -25,7 +26,8 @@ export const Content = ({
   alt,
   inverse,
   reverse,
-  linkTo
+  linkTo,
+  quote,
 }) => {
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
@@ -70,17 +72,24 @@ export const Content = ({
               >
                 {description}
               </Subtitle>
-              <a href={linkTo}>
-              <ContentButton
+              <Subtitle2
                 initial={initial}
-                transition={{ delay: 1, duration: 0.6 }}
+                transition={{ delay: 0.7, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
-                primary={primary}
               >
-                {buttonLabel}
-                
-              </ContentButton>
+                {quote}
+              </Subtitle2>
+              <a href={linkTo}>
+                <ContentButton
+                  initial={initial}
+                  transition={{ delay: 1, duration: 0.6 }}
+                  animate={animation}
+                  inverse={inverse}
+                  primary={primary}
+                >
+                  {buttonLabel}
+                </ContentButton>
               </a>
             </TextWrapper>
           </ContentColumn>
