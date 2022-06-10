@@ -1,84 +1,66 @@
 import React from "react";
-import { IconPrices, StyledRent } from "./Rent.styled";
+import { Button, Heading2 } from "../../Globalstyles";
+import { IconContext } from "react-icons/lib";
+import {
+  PricingSection,
+  PricingWrapper,
+  PricingContainer,
+  PricingCardInfo,
+  PricingCardPlan,
+  PricingCardCost,
+  PricingCardFeatures,
+  PricingCardText,
+  PricingCardFeature,
+  PricingCard,
+  PricingCardPers,
+  IconsWorkshop,
+  PricingCardTime,
+} from "./Rent.styled";
 
+import prices from "data/prices";
+import { TextWrapper2 } from "components/Workshop/Workshop.styled";
 
-export default function Prices({
-  item: { price, nbrPers, subject, comment, choice, icon, id },
-}) {
+export default function Prices({ icon, id }) {
   return (
-    <StyledRent>
-      {/* <div
-        className="easyloisirs_module"
-        data-hash="5a819170bb53e8f0cd280e806ad6835af3b5bf04"
-      > */}
-        <div className="group">
-          <p className="price">{price}</p>
-          <IconPrices>{icon}</IconPrices>
-          <p className="txt-1">{nbrPers}</p>
-          <p className="txt-2">{subject}</p>
-          <p className="txt-3">{comment}</p>
-          <button>{choice}</button>
-        </div>
-      {/* </div> */}
-    </StyledRent>
+    <IconContext.Provider value={{ color: "#a9b3c1", size: "1rem" }}>
+      <PricingSection id="pricing">
+        <PricingWrapper>
+          <Heading2 color="black">Grille tarifaire location</Heading2>
+          <TextWrapper2
+            mt="1.4rem"
+            mb="1.4rem"
+            weight="500"
+            size="1.1rem"
+          >
+            Veuillez choisir le plan qui vous convient. Réservation uniquement
+            par téléphone au 06.71.41.23.26 ou par email
+            chasetheline72@gmail.com
+          </TextWrapper2>
+          <PricingContainer>
+            {prices.map((card, index) => (
+              <PricingCard key={index}>
+                <PricingCardInfo>
+                  <IconsWorkshop> {card.icon}</IconsWorkshop>
+                  <PricingCardPlan>{card.title}</PricingCardPlan>
+                  <PricingCardCost>{card.price}</PricingCardCost>
+                  <PricingCardTime>{card.time}</PricingCardTime>
+                  <PricingCardPers>{card.pers}</PricingCardPers>
+                  <hr />
+                  <PricingCardText>{card.description}</PricingCardText>
+                  <PricingCardFeatures>
+                    {card.features.map((feature, index) => (
+                      <PricingCardFeature key={index}>
+                        {feature}
+                      </PricingCardFeature>
+                    ))}
+                  </PricingCardFeatures>
+                  <Button>Get Started</Button>
+                </PricingCardInfo>
+              </PricingCard>
+            ))}
+          </PricingContainer>
+        </PricingWrapper>
+      </PricingSection>
+    </IconContext.Provider>
   );
 }
-
-// import React from 'react';
-// import { Button, Heading, TextWrapper } from '../../globalStyles';
-// import { IconContext } from 'react-icons/lib';
-// import {
-// 	PricingSection,
-// 	PricingWrapper,
-// 	PricingContainer,
-// 	PricingCardInfo,
-// 	PricingCardPlan,
-// 	PricingCardCost,
-// 	PricingCardFeatures,
-// 	PricingCardText,
-// 	PricingCardFeature,
-// 	PricingCard,
-// } from './PricingStyles';
-// import { pricingData } from '../../data/PricingData';
-
-// function Prices() {
-// 	return (
-// 		<IconContext.Provider value={{ color: '#a9b3c1', size: '1rem' }}>
-// 			<PricingSection id="pricing">
-// 				<PricingWrapper>
-// 					<Heading>Pick Your Best Option</Heading>
-
-// 					<TextWrapper
-// 						mb="1.4rem"
-// 						weight="600"
-// 						size="1.1rem"
-// 						color="white"
-// 						align="center"
-// 					>
-// 						Create, maintain and store your data with Delta.
-// 					</TextWrapper>
-// 					<PricingContainer>
-// 						{pricingData.map((card, index) => (
-// 							<PricingCard key={index}>
-// 								<PricingCardInfo>
-// 									<PricingCardPlan>{card.title}</PricingCardPlan>
-// 									<PricingCardCost>{card.price}</PricingCardCost>
-// 									<PricingCardText>{card.description}</PricingCardText>
-// 									<PricingCardFeatures>
-// 										{card.features.map((feature, index) => (
-// 											<PricingCardFeature key={index}>
-// 												{feature}
-// 											</PricingCardFeature>
-// 										))}
-// 									</PricingCardFeatures>
-// 									<Button>Get Started</Button>
-// 								</PricingCardInfo>
-// 							</PricingCard>
-// 						))}
-// 					</PricingContainer>
-// 				</PricingWrapper>
-// 			</PricingSection>
-// 		</IconContext.Provider>
-// 	);
-// }
-// export default Prices;

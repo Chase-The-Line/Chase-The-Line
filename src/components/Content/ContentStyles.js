@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { motion} from 'framer-motion/dist/framer-motion'
+// import { motion} from 'framer-motion/dist/framer-motion'
+import { motion } from 'framer-motion';
 
 export const ContentRow = styled.div`
 	display: flex;
@@ -97,7 +98,14 @@ export const Subtitle = styled(motion.p)`
 	margin-bottom: 35px;
 	line-height: 24px;
 	color: ${({ inverse }) => (inverse ? '#6a6a6a' : 'white')};
-	text-align: justify;
+`;
+
+export const Subtitle2 = styled(motion.p)`
+	max-width: 440px;
+	margin-bottom: 35px;
+	line-height: 24px;
+	color: ${({ inverse }) => (inverse ? '#6a6a6a' : 'white')};
+
 `;
 
 export const ContentButton = styled(motion.button)`
@@ -141,6 +149,7 @@ export const ContentButton = styled(motion.button)`
 	}
 
 	&:hover {
-		color: ${({ inverse }) => (inverse ? 'white' : 'black')};
+		color: ${({ inverse }) => (inverse ? 'white' : '#219150')};
 	}
 `;
+

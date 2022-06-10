@@ -1,15 +1,11 @@
-import React from "react";
 import Footer from "components/Footer/Footer";
-import { StyledRent } from "components/Price/Rent.styled";
-import { Container } from "components/styles/Container.styled";
-import BlackNav from "components/Navbar/BlackNav";
 import Prices from "components/Price/Prices";
-import { Flex } from "components/styles/Flex.styled";
-import prices from "data/prices";
-// import Prices from "components/Price/Prices";
+import React from "react";
+import DarkNav from "components/Navbar/DarkNav";
 
-export default function Rent() {
+const Rent = () => {
   return (
+<<<<<<< HEAD
     <StyledRent>
       <BlackNav />
       <Container>
@@ -32,16 +28,14 @@ export default function Rent() {
           </div>
         </div>
       </Container>
+=======
+    <div>
+      <DarkNav />
+      <Prices />
+>>>>>>> origin/souka
       <Footer />
-    </StyledRent>
+    </div>
   );
-}
+};
 
-// import Prices from 'components/Price/Prices';
-// import React from 'react';
-
-// const Rent = () => {
-// 	return <Prices />;
-// };
-
-// export default Rent;
+export default Rent;

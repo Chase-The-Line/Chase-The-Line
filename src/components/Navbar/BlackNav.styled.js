@@ -1,195 +1,162 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { Container } from "../../Globalstyles";
+import { Link, NavLink } from "react-router-dom";
 
 export const Nav = styled.nav`
-  font-size: 18px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  background: hsla(0, 0%, 0%, 0.5);
+  margin-bottom: -80px;
   height: 80px;
-  background-color: #faf9f7;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+
+  transition: background-color 0.3s ease-in;
+`;
+
+export const StyledSocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    display: flex;
+	
+  }
 `;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
   height: 80px;
-  ${Container};
+
+  ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-  color: #000;
+  color: #fff;
+  justify-self: flex-start;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: 800;
-  transition: all 0.5s ease;
-  &:hover {
-    transform: scale(1.08);
-  }
+  z-index: 50;
 `;
 
-export const MenuIcon = styled.div`
-  display: none;
+export const NavIcon = styled.img`
   margin-right: 1rem;
-	width: 3rem;
+  width: 8rem;
+`;
 
-  @media (max-width: 1000px) {
+export const MobileIcon = styled.div`
+  display: none;
+  z-index: 50;
+
+  @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
-    /* background-color: #000; */
-    color: #000;
     top: 0;
     right: 0;
-    transform: translate(-50%, 20%);
-    font-size: 4rem;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
     cursor: pointer;
   }
 `;
 
-export const Menu = styled.ul`
+export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
+  list-style: none;
   text-align: center;
+  width: 100%;
 
-  @media only screen and (max-width: 1000px) {
-    display: flex;
+  @media screen and (max-width: 960px) {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 80px;
-    left: ${({ click }) => (click ? "0" : "-100%")};
-    background-color: #faf9f7;
-    transition: all 0.5s ease;
+    position: fixed;
+    padding-top: 30%;
+    top: 0;
+    left: 0;
+    opacity: ${({ show }) => (show ? 1 : 0)};
+    visibility: ${({ show }) => (show ? "visible" : "hidden")};
+    transform: translateY(${({ show }) => (show ? "0" : "-10px")});
+    transition: opacity 0.5s ease;
+    background-color: #003333;
+  }
+
+  > li:first-child {
+    margin-left: auto;
   }
 `;
 
-export const MenuItem = styled.li`
-  list-style: none;
+export const NavItem = styled.li`
   height: 80px;
+  cursor: pointer;
 
-  @media only screen and (max-width: 1000px) {
+  @media screen and (max-width: 960px) {
     width: 100%;
+
     &:hover {
       border: none;
     }
   }
 `;
 
-export const NavLink = styled(Link)`
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-  color: #000;
+export const NavLinks = styled(NavLink)`
+  color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
   height: 100%;
-  transition: all 0.2s ease;
 
   &:hover {
-    color: #40a339;
-    transform: traslateY(-3rem);
-  }
-  &:active {
-    transform: traslateY(3rem);
-    color: #40a339;
+    color: #9cf7a7;
+    transition: all 0.3s ease;
   }
 
-  @media only screen and (max-width: 1000px) {
-    display: block;
-    padding: 3rem;
+  @media screen and (max-width: 960px) {
     text-align: center;
-    transition: all 0.2s ease;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #9cf7a7;
+      transition: all 0.3s ease;
+    }
   }
 `;
 
-
-
-// export const NavMenu = styled.ul`
-//   display: flex;
-//   align-items: center;
-//   list-style: none;
-//   text-align: center;
-//   width: 100%;
-
-//   @media screen and (max-width: 960px) {
-//     flex-direction: column;
-//     width: 100%;
-//     height: 100vh;
-//     position: fixed;
-//     padding-top: 30%;
-//     top: 0;
-//     left: 0;
-//     opacity: ${({ show }) => (show ? 1 : 0)};
-//     visibility: ${({ show }) => (show ? "visible" : "hidden")};
-//     transform: translateY(${({ show }) => (show ? "0" : "-10px")});
-//     transition: opacity 0.5s ease;
-//     background-color: #003333;
-//   }
-
-//   > li:first-child {
-//     margin-left: auto;
-//   }
-// `;
-
-// export const NavItem = styled.li`
-//   height: 80px;
-//   cursor: pointer;
-
-//   @media screen and (max-width: 960px) {
-//     width: 100%;
-
-//     &:hover {
-//       border: none;
-//     }
-//   }
-// `;
-
-// export const NavLinks = styled.span`
-//   color: #fff;
-//   display: flex;
-//   align-items: center;
-//   text-decoration: none;
-//   padding: 0.5rem 1rem;
-//   height: 100%;
-
-//   &:hover {
-//     color: #c8c9d8;
-//     transition: all 0.3s ease;
-//   }
-
-//   @media screen and (max-width: 960px) {
-//     text-align: center;
-//     padding: 2rem;
-//     width: 100%;
-//     display: table;
-
-//     &:hover {
-//       color: #4b59f7;
-//       transition: all 0.3s ease;
-//     }
-//   }
-// `;
-
-// export const NavBtnLink = styled(Link)`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   text-decoration: none;
-//   padding: 8px 16px;
-//   height: 100%;
-//   width: 100%;
-//   border: none;
-//   outline: none;
-// `;
+export const NavBtnLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+`;

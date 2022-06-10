@@ -1,15 +1,14 @@
 import React from "react";
-import WhiteNav from "components/Navbar/WhiteNav";
-import { StyledWorkshop } from "components/Workshop/Workshop.styled";
 import Footer from "components/Footer/Footer";
 import Work from "components/Workshop/Work";
+import BlackNav from "components/Navbar/BlackNav";
 
 export default function Workshop() {
   return (
-    <StyledWorkshop>
-      <WhiteNav />
+    <div>
+      <BlackNav />
       <Work />
       <Footer />
-    </StyledWorkshop>
+    </div>
   );
 }

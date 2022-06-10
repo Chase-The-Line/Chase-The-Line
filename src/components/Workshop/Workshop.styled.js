@@ -1,16 +1,79 @@
 import styled from "styled-components";
-import { Container } from "../../Globalstyles";
-import { FaBicycle, FaImages } from "react-icons/fa";
 
-export const StyledWorkshop = styled.header`
-  background-image: url("./images/background-workshop.svg");
+export const PricingCardInfo = styled.div`
+  background: #003333;
+  box-shadow: 0 6px 20px rgba(107, 142, 35, 0.2);
+  width: 280px;
+  text-decoration: none;
+  border-radius: 4px;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  color: #fff;
+  margin: auto;
+  > button {
+    margin-top: auto;
+
+    &:hover {
+      color: black;
+      background: white;
+      transition: background 0.3s ease;
+    }
+  }
+`;
+
+export const TextWrapper2 = styled.span`
+  color: ${({ color }) => (color ? color : "")};
+  font-size: ${({ size }) => (size ? size : "")};
+  font-weight: ${({ weight }) => (weight ? weight : "")};
+  letter-spacing: ${({ spacing }) => (spacing ? spacing : "")};
+  padding: ${({ padding }) => (padding ? padding : "")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  margin-bottom: ${({ mb }) => (mb ? mb : "")};
+  margin-top: ${({ mt }) => (mt ? mt : "")};
+  text-align: center;
+`;
+
+export const PricingCardFeature = styled.li`
+  margin-bottom: 1rem;
+  display: flex;
+  font-size: 0.94rem;
+
+  &:before {
+    content: "⚙️";
+    margin-right: 0.4rem;
+  }
+`;
+
+export const Heading2 = styled.h2`
+  font-size: clamp(1.3rem, 13vw, 3.1rem);
+  margin: ${({ margin }) => (margin ? margin : "")};
+  margin-bottom: ${({ mb }) => (mb ? mb : "")};
+  margin-top: ${({ mt }) => (mt ? mt : "")};
+  color: ${({ inverse }) => (inverse ? "$fff" : "#fff")};
+  line-height: 1.06;
+  text-align: center;
+  width: ${({ width }) => (width ? width : "100%")};
+`;
+
+export const PricingCardPlan = styled.h3`
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+`;
+
+export const WorkSection = styled.header`
+  background-image: url("./images/chaine.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  .france {
-    margin-bottom: -54px;
-  }
-
+  padding-top: clamp(70px, 25vh, 150px);
+  margin-bottom: -54px;
+  box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
   .link {
     text-decoration: none;
     color: #000;
@@ -23,95 +86,7 @@ export const WorkContent = styled.div`
   align-items: center;
   margin-top: 5rem;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
-`;
-
-export const WorkContainer = styled(Container)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5rem 8rem;
-  color: #333333;
-  align-items: stretch;
-
-  ${Container};
-`;
-
-export const WorkTitle1 = styled.h1`
-  font-family: Libre Baskerville, serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 140%;
-  color: #fff;
-`;
-
-export const WorkTitle2 = styled.h3`
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding-top: 1rem;
-`;
-
-export const WorksText1 = styled.p`
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #fff;
-  line-height: 140%;
-  letter-spacing: -0.02em;
-`;
-
-export const WorksText = styled.p`
-  font-size: 1.0rem;
-  padding: 1rem 2rem;
-  opacity: 0.6;
-`;
-
-export const WorkCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 30rem;
-  margin: 20px;
-  background-color: #fff;
-  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
-  border-radius: 20px;
-  transition: all 0.5s ease;
-
-  &:hover {
-    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.21);
-    transform: scale(1.05);
-    background-color: #40a339;
-    color: #fff;
-  }
-`;
-
-export const Bicycle = styled(FaBicycle)`
-  color: #000;
-  font-size: 5rem;
-`;
-
-export const Images = styled(FaImages)`
-  color: #000;
-  font-size: 5rem;
-`;
-
-export const WorksIconContainer = styled.div`
-  width: 9rem;
-  height: 9rem;
-  border-radius: 50%;
-  border: 2px solid #40a339;
-  transition: all 0.3s ease-out;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;

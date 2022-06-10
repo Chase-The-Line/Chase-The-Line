@@ -1,12 +1,17 @@
 {
   "name": "chase-the-line",
   "version": "0.1.0",
-  "private": true,
   "author": {
     "name": "Attoumani Soukainata",
     "email": "soukainataa1987@gmail.com",
     "url": "https://404notfound.com"
   },
+  "description": "bicycle website",
+  "email": "chasetheline72@gmail.com",
+  "license": "MIT",
+  "homepage": "./",
+  "main": "index.js",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -28,6 +33,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "w:build": "cross-env BUILD_PATH='./dist/webapp' react-scripts build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
