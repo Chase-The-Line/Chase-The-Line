@@ -24,6 +24,18 @@ export const PricingCardInfo = styled.div`
   }
 `;
 
+export const TextWrapper2 = styled.span`
+  color: ${({ color }) => (color ? color : "")};
+  font-size: ${({ size }) => (size ? size : "")};
+  font-weight: ${({ weight }) => (weight ? weight : "")};
+  letter-spacing: ${({ spacing }) => (spacing ? spacing : "")};
+  padding: ${({ padding }) => (padding ? padding : "")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  margin-bottom: ${({ mb }) => (mb ? mb : "")};
+  margin-top: ${({ mt }) => (mt ? mt : "")};
+  text-align: center;
+`;
+
 export const PricingCardFeature = styled.li`
   margin-bottom: 1rem;
   display: flex;
@@ -74,7 +86,7 @@ export const WorkContent = styled.div`
   align-items: center;
   margin-top: 5rem;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;

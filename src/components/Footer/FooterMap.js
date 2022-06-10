@@ -5,16 +5,19 @@ import { Container } from "../styles/Container.styled";
 import { FooterCopyRight, StyledFooter } from "../Footer/Footer.styled";
 import { StyledDivCard } from "../Card/DivCard.styled";
 import { FaLeaf } from "react-icons/fa";
+import { Img } from "components/Content/ContentStyles";
+import { Img2 } from "components/Footer/Footer.styled";
 
 export default function Footer() {
   return (
     <StyledFooter>
       <StyledDivCard>
-        <img src="./images/acceuil.jpg" width="100%" height="560" alt="" />
+        <Img2 src="./images/acceuil.jpg" width="100%" height="560" alt="" />
         <GoogleMap />
       </StyledDivCard>
+
       <Container>
-        <img src="./images/LogoFooter.svg" alt="logo" />
+        <Img src="./images/LogoFooter.svg" alt="logo" />
         <p>
           Sur un vélo on boit de l'eau ! Une fois sur terre on boit de la bière
           !
@@ -31,8 +34,7 @@ export default function Footer() {
         </NavLink>
         <SocialIcons />
         <FooterCopyRight>
-          &copy; 2022 Chase The Line. Tous droits réservés{" "}
-            <FaLeaf />
+          &copy; 2022 Chase The Line. Tous droits réservés <FaLeaf />
         </FooterCopyRight>
       </Container>
     </StyledFooter>

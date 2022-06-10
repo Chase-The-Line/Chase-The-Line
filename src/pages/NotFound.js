@@ -4,13 +4,14 @@ import {
 } from "components/NotFound/NotFound.styled";
 import React from "react";
 import { useAnimation } from "framer-motion";
+import { Section } from "Globalstyles";
 
 const NotFound = ({ primary, inverse }) => {
   const initial = { opacity: 1, y: 30 };
   const animation = useAnimation();
   return (
     <NotFoundSection>
-      <section className="home" id="home">
+      <Section className="home" id="home">
         <div className="swiper home-slider">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
@@ -49,7 +50,7 @@ const NotFound = ({ primary, inverse }) => {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     </NotFoundSection>
   );
 };

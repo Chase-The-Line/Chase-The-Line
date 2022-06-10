@@ -6,17 +6,11 @@ export const HeroSection = styled.section`
   }
 
   .home .box {
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    height: 100vh;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-size: cover !important;
     background-position: center !important;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: center;
     padding: 2rem 9%;
   }
@@ -29,6 +23,7 @@ export const HeroSection = styled.section`
 
   .home .box .content {
     width: 50rem;
+    margin-top: 5em;
   }
 
   .home .box .content span {

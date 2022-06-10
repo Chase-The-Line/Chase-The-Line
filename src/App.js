@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./Globalstyles";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 // Pages
 import Home from "pages/Home";
@@ -20,12 +20,14 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/location" exact element={<Rent />} />
-          <Route path="/atelier" exact element={<Workshop />} />
-          <Route path="*" exact element={<NotFound />} />
-        </Routes>
+        <HashRouter>
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/location" exact element={<Rent />} />
+            <Route path="/atelier" exact element={<Workshop />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </HashRouter>
       </>
     </ThemeProvider>
   );

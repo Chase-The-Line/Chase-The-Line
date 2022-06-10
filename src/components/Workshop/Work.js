@@ -4,9 +4,10 @@ import {
   PricingCardFeature,
   PricingCardInfo,
   PricingCardPlan,
+  TextWrapper2,
   WorkSection,
 } from "./Workshop.styled";
-import { Button, TextWrapper } from "Globalstyles";
+import { Button } from "Globalstyles";
 import {
   IconsWorkshop,
   PricingCard,
@@ -29,17 +30,16 @@ export default function Work() {
         <PricingSection id="pricing">
           <PricingWrapper>
             <Heading2 color="#fff">Mon atelier</Heading2>
-            <TextWrapper
+            <TextWrapper2
               mt="1.4rem"
               mb="1.4rem"
               weight="300"
               size="1.1rem"
               color="#fff"
-              align="center"
             >
               Pas de jaloux tous les vélos peuvent venir à l'atelier !
               L'entretien de vos suspensions ? C'est aussi ici que ça se passe.
-            </TextWrapper>
+            </TextWrapper2>
             <div>
               <PricingContainer>
                 {workshopPrice.map((card, index) => (

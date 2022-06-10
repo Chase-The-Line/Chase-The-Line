@@ -1,3 +1,4 @@
+import { Img } from "components/Content/ContentStyles";
 import { Container } from "Globalstyles";
 import { FaLeaf } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -7,7 +8,7 @@ function Footer() {
   return (
     <StyledFooter>
       <Container>
-        <img src="./images/LogoFooter.svg" alt="logo" />
+        <Img src="./images/LogoFooter.svg" alt="logo" />
         <p>
           Sur un vélo on boit de l'eau ! Une fois sur terre on boit de la bière
           !

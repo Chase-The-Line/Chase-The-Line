@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&display=swap');
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -22,11 +21,11 @@ export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 50px;
-
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     padding: 0 30px;
   }
 `;
+
 export const HeroSubTitle = styled.h1`
   font-size: clamp(2.3rem, 6vw, 4.5rem);
   margin-top: 7rem;
@@ -101,6 +100,10 @@ export const Row = styled.div`
   max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
   min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
   flex-wrap: ${({ wrap }) => (wrap ? wrap : "")};
+
+  @media screen and (max-width: 768px) {
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+  }
 `;
 
 export const Column = styled.div`
@@ -118,6 +121,10 @@ export const Column = styled.div`
   height: ${({ height }) => (height ? height : "auto")};
   max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
   min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
+
+  @media screen and (max-width: 768px) {
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+  }
 `;
 
 export const Button = styled.button`

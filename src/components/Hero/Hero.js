@@ -2,6 +2,7 @@ import { ContentButton } from "components/Content/ContentStyles";
 import React from "react";
 import { HeroSection } from "./Hero.styled";
 import { useAnimation } from "framer-motion";
+import { Section } from "Globalstyles";
 
 const Hero = ({ primary, inverse }) => {
   const initial = { opacity: 1, y: 30 };
@@ -9,7 +10,7 @@ const Hero = ({ primary, inverse }) => {
 
   return (
     <HeroSection>
-      <section className="home" id="home">
+      <Section className="home" id="home">
         <div className="swiper home-slider">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
@@ -44,7 +45,7 @@ const Hero = ({ primary, inverse }) => {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     </HeroSection>
   );
 };

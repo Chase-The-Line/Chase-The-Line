@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Heading2, TextWrapper } from "../../Globalstyles";
+import { Button, Heading2 } from "../../Globalstyles";
 import { IconContext } from "react-icons/lib";
 import {
   PricingSection,
@@ -18,6 +18,7 @@ import {
 } from "./Rent.styled";
 
 import prices from "data/prices";
+import { TextWrapper2 } from "components/Workshop/Workshop.styled";
 
 export default function Prices({ icon, id }) {
   return (
@@ -25,7 +26,7 @@ export default function Prices({ icon, id }) {
       <PricingSection id="pricing">
         <PricingWrapper>
           <Heading2 color="black">Grille tarifaire location</Heading2>
-          <TextWrapper
+          <TextWrapper2
             mt="1.4rem"
             mb="1.4rem"
             weight="500"
@@ -34,7 +35,7 @@ export default function Prices({ icon, id }) {
             Veuillez choisir le plan qui vous convient. Réservation uniquement
             par téléphone au 06.71.41.23.26 ou par email
             chasetheline72@gmail.com
-          </TextWrapper>
+          </TextWrapper2>
           <PricingContainer>
             {prices.map((card, index) => (
               <PricingCard key={index}>
