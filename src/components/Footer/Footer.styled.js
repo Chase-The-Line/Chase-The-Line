@@ -6,6 +6,7 @@ export const StyledFooter = styled.footer`
   text-align: center;
   margin-bottom: -50px;
   margin-top: 50px;
+  
 
   a {
     justify-content: center;
@@ -51,6 +52,17 @@ export const StyledFooter = styled.footer`
       text-align: center;
     }
   }
+`;
+
+export const Img2 = styled.img`
+	padding-right: 0;
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	object-fit: cover;
+	max-height: 700px;
+	z-index: 1;
 `;
 
 export const FooterCopyRight = styled.p`
