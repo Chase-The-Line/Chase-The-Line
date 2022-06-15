@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <StyledDivCard>
-        <Img2 src="./images/acceuil.jpg" width="100%" height="560" alt="" />
+        <Img2 src="./images/acceuil.jpg" width="800" height="560" alt="" />
         <GoogleMap />
       </StyledDivCard>
 

@@ -22,7 +22,7 @@ const content = [
       "La salle d'opération de vos machines.",
     icon: iconStyle(IoIosSettings),
     imgClass: "two",
-    link: "./atelier",
+    // link: "./atelier",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const content = [
     description: "Si vous souhaitez partir à l'aventure c'est ici...",
     icon: iconStyle(IoMdBicycle),
     imgClass: "three",
-    link: "./location",
+    // link: "./location",
   },
 ];
 
