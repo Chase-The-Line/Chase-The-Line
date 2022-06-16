@@ -7,6 +7,7 @@ import Home from "pages/Home";
 import Workshop from "pages/Workshop";
 import Rent from "pages/Rent";
 import NotFound from "pages/NotFound";
+import ContactForm from "pages/ContactForm";
 
 const theme = {
   colors: {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/location" exact element={<Rent />} />
             <Route path="/atelier" exact element={<Workshop />} />
+            <Route path="/contact" exact element={<ContactForm />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </HashRouter>
