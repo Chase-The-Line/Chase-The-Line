@@ -76,6 +76,10 @@ npm i -s react-redux redux redux-thunk redux-devtools-extension
 **Soukainata Attoumani, Etienne Massot**
 
 
+**Credits :**
+*Thanks to [Going-To Internet](/https://www.goingtointernet.com/2020/08/howto-Contact-Form-HTML.html) for contact form inspiration.*
+
+
 ## License
 
 Released under [MIT](/LICENSE).
