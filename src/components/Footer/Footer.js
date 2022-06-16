@@ -1,6 +1,5 @@
 import { Img } from "components/Content/ContentStyles";
 import { Container } from "Globalstyles";
-import { FaLeaf } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import { FooterCopyRight, StyledFooter } from "./Footer.styled";
@@ -29,8 +28,15 @@ function Footer() {
         <SocialIcons />
         <FooterCopyRight>
           &copy; 2022 Chase The Line. Tous droits réservés{" "}
-            <FaLeaf />
         </FooterCopyRight>
+        <div>
+          <img
+            src="./images/leaves.png"
+            alt=""
+            style={{ width: "50px", marginRight: "1.7rem" }}
+          />
+        </div>
+        <div style={{color:'#003333'}}>........</div>
       </Container>
     </StyledFooter>
   );

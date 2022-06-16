@@ -1,12 +1,13 @@
 import { Icon } from "@iconify/react";
-import { FaFacebook, FaInstagram, FaLeaf } from "react-icons/fa";
+import { Img } from "components/Content/ContentStyles";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 /* eslint-disable jsx-a11y/iframe-has-title */
 const Contact = () => {
   return (
     <div>
       <section id="contact">
-        <div class="social">
+        <div className="social">
           <a
             target="_blank"
             rel="noreferrer"
@@ -29,19 +30,9 @@ const Contact = () => {
             <FaInstagram />
           </a>
         </div>
-        <div class="contact-box">
+        <div className="contact-box">
           <div>
-            <img
-              src="./images/LogoFooter.svg"
-              alt=""
-              style={{
-                color: "#fff",
-                // cursor: "pointer",
-                fontSize: "2rem",
-                display: "flex",
-              }}
-            />
-
+            <Img src="./images/LogoFooter.svg" alt="logo" />
             <h1 className="title">Pour me contacter</h1>
             <p className="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -74,7 +65,7 @@ const Contact = () => {
             width="600"
             height="450"
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             aria-hidden="false"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

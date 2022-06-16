@@ -22,7 +22,7 @@ export const StyledContact = styled.div`
     text-align: center;
   }
 
-  .leaves{
+  .leaves {
     width: 50px;
     margin-right: 1.7rem;
   }
@@ -72,7 +72,6 @@ export const StyledContact = styled.div`
     align-items: center;
     padding: 30px 30px;
     box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
   }
   .c-heading h1 {
     font-family: Roboto;
@@ -91,61 +90,7 @@ export const StyledContact = styled.div`
     padding: 0px;
     text-align: center;
   }
-  .c-inputs {
-    margin: 15px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .c-inputs input {
-    width: 250px;
-    height: 45px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(251, 251, 251, 0.1);
-    outline: none;
-    margin: 10px 0px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: #f4f4f4;
-    display: flex;
-  }
-  .c-inputs textarea {
-    width: 250px !important;
-    height: 200px !important;
-    outline: none;
-    background-color: transparent;
-    border: 1px solid rgba(82, 82, 82, 1);
-    color: #f4f4f4;
-    padding: 10px;
-    font-size: 1.2rem;
-    box-sizing: border-box;
-  }
-  .c-inputs button {
-    width: 200px;
-    height: 40px;
-    background-color: #ffffff;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
-  }
-  .c-inputs input:focus {
-    border-bottom: 1px solid rgba(252, 252, 252, 1);
-    transition: all ease 0.5s;
-  }
-  .c-inputs textarea:focus {
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
-    transition: all ease 0.5s;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  .c-inputs button:active {
-    transform: scale(1.02);
-  }
+
   .map {
     filter: grayscale(0.2);
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
@@ -156,7 +101,7 @@ export const StyledContact = styled.div`
       display: none;
     }
   }
-  @media (max-width: 450px) {
+  @media (max-width: 758px) {
     .social {
       display: none;
     }
@@ -164,7 +109,6 @@ export const StyledContact = styled.div`
       width: 100%;
       height: 100vh;
       box-sizing: border-box;
-
     }
     #contact {
       position: static;
