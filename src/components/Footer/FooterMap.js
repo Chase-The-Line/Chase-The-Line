@@ -4,7 +4,6 @@ import SocialIcons from "../SocialIcons/SocialIcons";
 import { Container } from "../styles/Container.styled";
 import { FooterCopyRight, StyledFooter } from "../Footer/Footer.styled";
 import { StyledDivCard } from "../Card/DivCard.styled";
-import { FaLeaf } from "react-icons/fa";
 import { Img } from "components/Content/ContentStyles";
 import { Img2 } from "components/Footer/Footer.styled";
 
@@ -37,8 +36,16 @@ export default function Footer() {
         </NavLink>
         <SocialIcons />
         <FooterCopyRight>
-          &copy; 2022 Chase The Line. Tous droits réservés <FaLeaf />
+          &copy; 2022 Chase The Line. Tous droits réservés 
         </FooterCopyRight>
+        <div>
+          <img
+            src="./images/leaves.png"
+            alt=""
+            style={{ width: "50px", marginRight: "1.7rem" }}
+          />
+        </div>
+        <div style={{ color: "#003333" }}>........</div>
       </Container>
     </StyledFooter>
   );
