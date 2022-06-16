@@ -1,5 +1,6 @@
-import { FaFacebook, FaGoogle, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { StyledSocialIconsBlack } from "./SocialIconsBlack.styled";
+import { Icon } from "@iconify/react";
 
 export default function SocialIconsBlack() {
   return (
@@ -14,12 +15,12 @@ export default function SocialIconsBlack() {
         </a>
       </li>
       <li>
-        <a
+      <a
           target="_blank"
           rel="noreferrer"
-          href="https://fr.ulule.com/saint-leo-a-velo-/"
+          href="https://odysee.com/@chasetheline:e?r=CP6hvkp8AuNgY4Z1ZGRGDm3P7Afg6tKc"
         >
-          <FaGoogle />
+          <Icon icon="simple-icons:odysee" />
         </a>
       </li>
       <li>

@@ -46,6 +46,11 @@ const BlackNav = () => {
                 Location
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks onClick={closeMenu} exact="true" to="/contact">
+                Contact
+              </NavLinks>
+            </NavItem>
             <StyledSocialIcons>
               <li>
                 <a

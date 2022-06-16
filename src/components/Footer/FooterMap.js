@@ -32,6 +32,9 @@ export default function Footer() {
         <NavLink exact="true" to="/location" className="nav-active">
           Location
         </NavLink>
+        <NavLink exact="true" to="/contact" className="nav-active">
+          Contact
+        </NavLink>
         <SocialIcons />
         <FooterCopyRight>
           &copy; 2022 Chase The Line. Tous droits réservés <FaLeaf />
