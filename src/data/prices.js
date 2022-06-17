@@ -20,7 +20,7 @@ const prices = [
     title: "Location",
     price: "50€",
     time: "Durée: 1/2 journée",
-    pers: "/1 à 7 personnes",
+    pers: "/5 à 7 personnes",
     features: [
       "Encadrement cyclisme, possible à partir de 4 personnes",
       "casques protecteurs inclus.",
