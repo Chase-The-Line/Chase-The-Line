@@ -33,10 +33,9 @@ const Contact = () => {
         <div className="contact-box">
           <div>
             <Img src="./images/LogoFooter.svg" alt="logo" />
-            <h1 className="title">Pour me contacter</h1>
+            {/* <h1 className="title">Pour me contacter</h1> */}
             <p className="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolorum adipisci recusandae praesentium dicta!
+              N'hésitez pas à me contacter pour plus d'informations
             </p>
           </div>
           <img src="./images/leaves.png" className="leaves" alt="" />
