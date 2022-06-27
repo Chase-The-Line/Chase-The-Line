@@ -1,38 +1,13 @@
 import Footer from "components/Footer/Footer";
+import DarkNav from "components/Navbar/DarkNav";
 import Prices from "components/Price/Prices";
 import React from "react";
-import DarkNav from "components/Navbar/DarkNav";
 
 const Rent = () => {
   return (
-<<<<<<< HEAD
-    <StyledRent>
-      <BlackNav />
-      <Container>
-        <h1>Grille tarifaire location</h1>
-        <p className="title">
-          Veuillez choisir le plan qui vous convient | Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse{" "}
-        </p>
-        <div className="back">
-          <div className="">             
-            <Flex>
-              {" "}
-              {prices.map((item, index) => (
-                <Prices key={index} item={item} />
-              ))}
-            </Flex>      
-          </div>
-        </div>
-      </Container>
-=======
     <div>
       <DarkNav />
       <Prices />
->>>>>>> origin/souka
       <Footer />
     </div>
   );

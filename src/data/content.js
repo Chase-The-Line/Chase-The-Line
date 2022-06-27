@@ -1,4 +1,5 @@
 import React from "react";
+import { BiNews } from "react-icons/bi";
 import { IoMdBicycle } from "react-icons/io";
 import { IoIosSettings } from "react-icons/io";
 import { RiChat1Fill } from "react-icons/ri";
@@ -11,12 +12,7 @@ const content = [
       "Êtes-vous sûr de vraiment vouloir le savoir ?.",
     icon: iconStyle(RiChat1Fill),
     imgClass: "one",
-<<<<<<< HEAD
     link: "/",
-=======
-    // link: "./a-propos",
-  
->>>>>>> origin/souka
   },
   {
     name: "Mon atelier",
@@ -24,23 +20,22 @@ const content = [
       "La salle d'opération de vos machines.",
     icon: iconStyle(IoIosSettings),
     imgClass: "two",
-    link: "./atelier",
+    // link: "./atelier",
   },
   {
-<<<<<<< HEAD
+
     name: "Newsletter",
     description: "Inscrivez-vous pour ne rien rater et garder contact.",
     icon: iconStyle(BiNews),
     imgClass: "three",
     link: "./newsletter",
-=======
+
     id: 3,
     name: "Location",
     description: "Si vous souhaitez partir à l'aventure c'est ici...",
     icon: iconStyle(IoMdBicycle),
     imgClass: "three",
     link: "./location",
->>>>>>> origin/souka
   },
 ];
 

@@ -16,6 +16,7 @@ export const Nav = styled.nav`
   width: 100%;
 
   transition: background-color 0.3s ease-in;
+
 `;
 
 export const StyledSocialIcons = styled.div`
@@ -40,7 +41,6 @@ export const StyledSocialIcons = styled.div`
     width: 40px;
     text-decoration: none;
     display: flex;
-	
   }
 `;
 

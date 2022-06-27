@@ -11,12 +11,12 @@ export const StyledFooter = styled.footer`
   a {
     justify-content: center;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    /* padding: 10px; */
     position: relative;
     color: #fff;
     text-decoration: none;
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
 
   .nav-active {

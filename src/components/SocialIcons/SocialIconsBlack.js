@@ -1,21 +1,34 @@
-import {  FaFacebook, FaGoogle, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { StyledSocialIconsBlack } from "./SocialIconsBlack.styled";
+import { Icon } from "@iconify/react";
 
 export default function SocialIconsBlack() {
   return (
     <StyledSocialIconsBlack>
       <li>
-        <a href="https://www.facebook.com/Chase.The.Linemaxdvst/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.facebook.com/Chase.The.Linemaxdvst/"
+        >
           <FaFacebook />
         </a>
       </li>
       <li>
-        <a href="https://fr.ulule.com/saint-leo-a-velo-/">
-          <FaGoogle />
+      <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://odysee.com/@chasetheline:e?r=CP6hvkp8AuNgY4Z1ZGRGDm3P7Afg6tKc"
+        >
+          <Icon icon="simple-icons:odysee" />
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/chasetheline.shop/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/chasetheline.shop/"
+        >
           <FaInstagram />
         </a>
       </li>

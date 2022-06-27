@@ -28,7 +28,7 @@ const Hero = ({ primary, inverse }) => {
                     assistance éléctrique ainsi que l'atelier pour l'entretien
                     de vos vélos et vos suspensions.
                   </p>
-                  <a href="/location">
+                  <a  href="https://chasetheline.fr/#/location">
                     <ContentButton
                       initial={initial}
                       transition={{ delay: 1, duration: 0.6 }}
@@ -40,7 +40,6 @@ const Hero = ({ primary, inverse }) => {
                     </ContentButton>
                   </a>
                 </div>
-               
               </div>
             </div>
           </div>
