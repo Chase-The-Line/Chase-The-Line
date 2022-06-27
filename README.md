@@ -21,7 +21,7 @@
 ----------------------------------------
 
 
-> Website for Bycle Adventure 
+> Website for Bicycle Adventure 
 
 
 ## Installation Front-end
