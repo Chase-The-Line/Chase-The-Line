@@ -32,7 +32,7 @@ function Footer() {
         <div>
           <img
             src="./images/leaves.png"
-            alt=""
+            alt="leaves"
             style={{ width: "50px", marginRight: "1.7rem" }}
           />
         </div>

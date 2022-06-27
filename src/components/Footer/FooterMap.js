@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <StyledDivCard>
-        <Img2 src="./images/acceuil.jpg" width="800" height="560" alt="" />
+        <Img2 src="./images/acceuil.jpg" width="800" height="560" alt="forest" />
         <GoogleMap />
       </StyledDivCard>
 
@@ -41,7 +41,7 @@ export default function Footer() {
         <div>
           <img
             src="./images/leaves.png"
-            alt=""
+            alt="leaves"
             style={{ width: "50px", marginRight: "1.7rem" }}
           />
         </div>

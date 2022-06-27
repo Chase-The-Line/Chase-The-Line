@@ -22,13 +22,13 @@ const Hero = ({ primary, inverse }) => {
               >
                 <div className="content">
                   <span>Explorer et ...</span>
-                  <h3>Conquer the forest</h3>
+                  <h3>Conquer the Forest</h3>
                   <p>
-                    Venez découvrir le coeur des aples mancelles en VTT à
-                    assistance éléctrique ainsi que l'atelier pour l'entretien
+                    Venez découvrir le cœur des Alpes Mancelles en VTT à
+                    assistance électrique ainsi que l'atelier pour l'entretien
                     de vos vélos et vos suspensions.
                   </p>
-                  <a  href="https://chasetheline.fr/#/location">
+                  <a href="https://chasetheline.fr/#/location">
                     <ContentButton
                       initial={initial}
                       transition={{ delay: 1, duration: 0.6 }}

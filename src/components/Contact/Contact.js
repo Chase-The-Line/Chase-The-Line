@@ -35,23 +35,23 @@ const Contact = () => {
             <Img src="./images/LogoFooter.svg" alt="logo" />
             {/* <h1 className="title">Pour me contacter</h1> */}
             <p className="text">
-              N'hésitez pas à me contacter pour plus d'informations
+              N'hésitez pas à me contacter pour plus d'informations.
             </p>
           </div>
-          <img src="./images/leaves.png" className="leaves" alt="" />
+          <img src="./images/leaves.png" className="leaves" alt="leaves" />
           <div className="c-inputs">
             <div className="contact-info">
               <div className="info">
                 <div className="information">
-                  <img src="./images/location.png" className="icon" alt="" />
+                  <img src="./images/location.png" className="icon" alt="icon" />
                   <p>2 Rue des Alpes Mancelles, 72130 Saint-Léonard-des-Bois</p>
                 </div>
                 <div className="information">
-                  <img src="./images/mail.png" className="icon" alt="" />
+                  <img src="./images/mail.png" className="icon" alt="icon" />
                   <p>chasetheline72@gmail.com</p>
                 </div>
                 <div className="information">
-                  <img src="./images/phone.png" className="icon" alt="" />
+                  <img src="./images/phone.png" className="icon" alt="icon" />
                   <p>06.71.41.23.26</p>
                 </div>
               </div>
